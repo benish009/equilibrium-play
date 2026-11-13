@@ -1,0 +1,7411 @@
+{
+ "format": 1,
+ "units": "m",
+ "note": "Контракт и оси: art/pipeline/item_models/README.md",
+ "items": {
+  "apprentice_hat": {
+   "file": "apprentice_hat.glb",
+   "shape": "hat_pointed",
+   "variant": 0,
+   "kind": "head",
+   "mount": [
+    0,
+    0,
+    0
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ],
+   "forward": [
+    0,
+    0,
+    1
+   ],
+   "baseWidthM": 0.2298,
+   "baseDepthM": 0.4523,
+   "lengthM": 0.3505,
+   "sizeM": [
+    0.3344,
+    0.3505,
+    0.46
+   ],
+   "bboxM": {
+    "min": [
+     -0.1674,
+     -0.0052,
+     -0.2338
+    ],
+    "max": [
+     0.167,
+     0.3453,
+     0.2262
+    ]
+   },
+   "com": [
+    0.0001,
+    0.1143,
+    0.0047
+   ],
+   "tris": 7000,
+   "verts": 8465,
+   "texPx": 1024,
+   "kb": 278,
+   "slot": "head"
+  },
+  "apprentice_staff": {
+   "file": "apprentice_staff.glb",
+   "shape": "staff",
+   "variant": 0,
+   "kind": "blade",
+   "grip": [
+    0,
+    0,
+    0
+   ],
+   "grip2": [
+    0.0124,
+    0.3,
+    -0.0498
+   ],
+   "tip": [
+    0,
+    0.986,
+    0
+   ],
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "faceNormal": [
+    0,
+    0,
+    1
+   ],
+   "edgeDir": [
+    1,
+    0,
+    0
+   ],
+   "lengthM": 1.7,
+   "sizeM": [
+    0.208,
+    1.7,
+    0.4863
+   ],
+   "bboxM": {
+    "min": [
+     -0.0919,
+     -0.714,
+     -0.3057
+    ],
+    "max": [
+     0.1161,
+     0.986,
+     0.1806
+    ]
+   },
+   "com": [
+    0.012,
+    0.3802,
+    -0.0715
+   ],
+   "tris": 5000,
+   "verts": 4921,
+   "texPx": 512,
+   "kb": 150,
+   "hands": 2,
+   "slot": "mainHand"
+  },
+  "apprentice_tome": {
+   "file": "apprentice_tome.glb",
+   "shape": "tome",
+   "variant": 0,
+   "kind": "book",
+   "mount": [
+    0,
+    0,
+    0
+   ],
+   "grip": [
+    0,
+    0,
+    0
+   ],
+   "faceNormal": [
+    0,
+    0,
+    1
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ],
+   "lengthM": 0.3,
+   "sizeM": [
+    0.2136,
+    0.3,
+    0.0861
+   ],
+   "bboxM": {
+    "min": [
+     -0.1068,
+     -0.15,
+     -0.0043
+    ],
+    "max": [
+     0.1068,
+     0.15,
+     0.0818
+    ]
+   },
+   "com": [
+    0.0008,
+    -0.0149,
+    0.0366
+   ],
+   "tris": 4998,
+   "verts": 5272,
+   "texPx": 512,
+   "kb": 157,
+   "slot": "offHand"
+  },
+  "apprentice_wand": {
+   "file": "apprentice_wand.glb",
+   "shape": "wand",
+   "variant": 0,
+   "kind": "blade",
+   "grip": [
+    0,
+    0,
+    0
+   ],
+   "tip": [
+    0,
+    0.344,
+    0
+   ],
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "faceNormal": [
+    0,
+    0,
+    1
+   ],
+   "edgeDir": [
+    1,
+    0,
+    0
+   ],
+   "lengthM": 0.4,
+   "sizeM": [
+    0.0519,
+    0.4,
+    0.023
+   ],
+   "bboxM": {
+    "min": [
+     -0.0249,
+     -0.056,
+     -0.0115
+    ],
+    "max": [
+     0.027,
+     0.344,
+     0.0114
+    ]
+   },
+   "com": [
+    -0.0004,
+    0.1173,
+    0.0005
+   ],
+   "tris": 1982,
+   "verts": 1831,
+   "texPx": 512,
+   "kb": 71,
+   "hands": 1,
+   "slot": "mainHand"
+  },
+  "berserk_f_belt": {
+   "file": "berserk_f_belt.glb",
+   "shape": "belt_band",
+   "variant": 0,
+   "kind": "garment",
+   "slot": "belt",
+   "frame": "body",
+   "side": "both",
+   "garment": {
+    "body": "f",
+    "layer": 0.024,
+    "layerBelow": {
+     "y": -0.06,
+     "fade": 0.06,
+     "layer": 0.045
+    }
+   },
+   "lengthM": 0.4789,
+   "sizeM": [
+    0.5294,
+    0.4789,
+    0.3999
+   ],
+   "bboxM": {
+    "min": [
+     -0.2647,
+     -0.4089,
+     -0.2
+    ],
+    "max": [
+     0.2647,
+     0.07,
+     0.1999
+    ]
+   },
+   "com": [
+    0.0005,
+    -0.1145,
+    -0.0045
+   ],
+   "tris": 9996,
+   "verts": 9993,
+   "texPx": 1024,
+   "kb": 293
+  },
+  "berserk_f_cuirass": {
+   "file": "berserk_f_cuirass.glb",
+   "shape": "chest_plate",
+   "variant": 0,
+   "kind": "garment",
+   "slot": "chest",
+   "frame": "body",
+   "side": "both",
+   "garment": {
+    "body": "f",
+    "layer": 0.016,
+    "rigid": {
+     "region": {
+      "xAbsMin": 0.152,
+      "yMin": 0.24,
+      "fade": 0.008
+     },
+     "weights": [
+      [
+       "Arm",
+       1
+      ]
+     ]
+    }
+   },
+   "lengthM": 0.53,
+   "sizeM": [
+    0.7309,
+    0.53,
+    0.2083
+   ],
+   "bboxM": {
+    "min": [
+     -0.3654,
+     -0.03,
+     -0.1083
+    ],
+    "max": [
+     0.3655,
+     0.5,
+     0.1
+    ]
+   },
+   "com": [
+    0.0001,
+    0.2801,
+    0.0013
+   ],
+   "tris": 14996,
+   "verts": 12671,
+   "texPx": 1024,
+   "kb": 390
+  },
+  "berserk_f_greaves": {
+   "file": "berserk_f_greaves.glb",
+   "shape": "greaves",
+   "variant": 0,
+   "kind": "garment",
+   "slot": "boots",
+   "frame": "body",
+   "side": "both",
+   "garment": {
+    "body": "f",
+    "layer": 0.013,
+    "legs": true
+   },
+   "lengthM": 0.66,
+   "sizeM": [
+    0.3509,
+    0.66,
+    0.3935
+   ],
+   "bboxM": {
+    "min": [
+     -0.1754,
+     -1.06,
+     -0.1366
+    ],
+    "max": [
+     0.1754,
+     -0.4,
+     0.2568
+    ]
+   },
+   "com": [
+    0,
+    -0.768,
+    0.0155
+   ],
+   "tris": 12000,
+   "verts": 11159,
+   "texPx": 1024,
+   "kb": 340
+  },
+  "berserk_f_shirt": {
+   "file": "berserk_f_shirt.glb",
+   "shape": "shirt",
+   "variant": 0,
+   "kind": "garment",
+   "slot": "shirt",
+   "frame": "body",
+   "side": "both",
+   "garment": {
+    "body": "f",
+    "layer": 0.006,
+    "sleeve": 0.2
+   },
+   "lengthM": 0.54,
+   "sizeM": [
+    0.5986,
+    0.54,
+    0.2475
+   ],
+   "bboxM": {
+    "min": [
+     -0.2998,
+     -0.0557,
+     -0.1233
+    ],
+    "max": [
+     0.2989,
+     0.4843,
+     0.1242
+    ]
+   },
+   "com": [
+    -0.0002,
+    0.1957,
+    -0.0103
+   ],
+   "tris": 7422,
+   "verts": 4788,
+   "texPx": 1024,
+   "kb": 168
+  },
+  "berserk_f_trousers": {
+   "file": "berserk_f_trousers.glb",
+   "shape": "trousers",
+   "variant": 0,
+   "kind": "garment",
+   "slot": "legs",
+   "frame": "body",
+   "side": "both",
+   "garment": {
+    "body": "f",
+    "layer": 0.011,
+    "legs": true
+   },
+   "lengthM": 0.9299,
+   "sizeM": [
+    0.3487,
+    0.9299,
+    0.2315
+   ],
+   "bboxM": {
+    "min": [
+     -0.1747,
+     -0.9,
+     -0.1099
+    ],
+    "max": [
+     0.174,
+     0.0299,
+     0.1216
+    ]
+   },
+   "com": [
+    -0.0001,
+    -0.4419,
+    0.0044
+   ],
+   "tris": 9000,
+   "verts": 7604,
+   "texPx": 1024,
+   "kb": 226
+  },
+  "berserk_f_vambraces": {
+   "file": "berserk_f_vambraces.glb",
+   "shape": "bracers",
+   "variant": 0,
+   "kind": "garment",
+   "slot": "gloves",
+   "frame": "body",
+   "side": "both",
+   "garment": {
+    "body": "f",
+    "layer": 0.014
+   },
+   "lengthM": 0.1017,
+   "sizeM": [
+    1.3398,
+    0.1017,
+    0.0801
+   ],
+   "bboxM": {
+    "min": [
+     -0.6699,
+     0.3241,
+     -0.0521
+    ],
+    "max": [
+     0.6699,
+     0.4258,
+     0.028
+    ]
+   },
+   "com": [
+    -0.0001,
+    0.3717,
+    -0.0117
+   ],
+   "tris": 5998,
+   "verts": 7470,
+   "texPx": 1024,
+   "kb": 212
+  },
+  "berserk_m_belt": {
+   "file": "berserk_m_belt.glb",
+   "shape": "belt_band",
+   "variant": 0,
+   "kind": "garment",
+   "slot": "belt",
+   "frame": "body",
+   "side": "both",
+   "garment": {
+    "body": "m",
+    "layer": 0.024
+   },
+   "lengthM": 0.1497,
+   "sizeM": [
+    0.3997,
+    0.1497,
+    0.2899
+   ],
+   "bboxM": {
+    "min": [
+     -0.2,
+     -0.1099,
+     -0.1449
+    ],
+    "max": [
+     0.1997,
+     0.0398,
+     0.1449
+    ]
+   },
+   "com": [
+    0.0002,
+    -0.0301,
+    0.0029
+   ],
+   "tris": 8996,
+   "verts": 7548,
+   "texPx": 1024,
+   "kb": 240
+  },
+  "berserk_m_boots": {
+   "file": "berserk_m_boots.glb",
+   "shape": "boot_cuffs",
+   "variant": 0,
+   "kind": "garment",
+   "slot": "boots",
+   "frame": "body",
+   "side": "both",
+   "garment": {
+    "body": "m",
+    "layer": 0.013,
+    "legs": true
+   },
+   "lengthM": 0.4298,
+   "sizeM": [
+    0.3398,
+    0.4298,
+    0.4338
+   ],
+   "bboxM": {
+    "min": [
+     -0.1699,
+     -1.0299,
+     -0.1769
+    ],
+    "max": [
+     0.1699,
+     -0.6001,
+     0.2569
+    ]
+   },
+   "com": [
+    0,
+    -0.8361,
+    -0.0095
+   ],
+   "tris": 9998,
+   "verts": 9952,
+   "texPx": 1024,
+   "kb": 291
+  },
+  "berserk_m_bracers": {
+   "file": "berserk_m_bracers.glb",
+   "shape": "bracers",
+   "variant": 0,
+   "kind": "garment",
+   "slot": "gloves",
+   "frame": "body",
+   "side": "both",
+   "garment": {
+    "body": "m",
+    "layer": 0.014
+   },
+   "lengthM": 0.1061,
+   "sizeM": [
+    1.3998,
+    0.1061,
+    0.0836
+   ],
+   "bboxM": {
+    "min": [
+     -0.6999,
+     0.327,
+     -0.0868
+    ],
+    "max": [
+     0.6999,
+     0.4331,
+     -0.0032
+    ]
+   },
+   "com": [
+    0.0002,
+    0.3766,
+    -0.0447
+   ],
+   "tris": 5998,
+   "verts": 7508,
+   "texPx": 1024,
+   "kb": 207
+  },
+  "berserk_m_harness": {
+   "file": "berserk_m_harness.glb",
+   "shape": "straps",
+   "variant": 0,
+   "kind": "garment",
+   "slot": "chest",
+   "frame": "body",
+   "side": "both",
+   "garment": {
+    "body": "m",
+    "layer": 0.009,
+    "rigid": {
+     "region": {
+      "xAbsMin": 0.152,
+      "yMin": 0.27,
+      "fade": 0.006
+     },
+     "weights": [
+      [
+       "Arm",
+       1
+      ]
+     ]
+    }
+   },
+   "lengthM": 0.5825,
+   "sizeM": [
+    0.6797,
+    0.5825,
+    0.281
+   ],
+   "bboxM": {
+    "min": [
+     -0.2275,
+     0.07,
+     -0.1451
+    ],
+    "max": [
+     0.4522,
+     0.6525,
+     0.1359
+    ]
+   },
+   "com": [
+    0.1123,
+    0.2889,
+    0.0471
+   ],
+   "tris": 11995,
+   "verts": 8592,
+   "texPx": 1024,
+   "kb": 300
+  },
+  "berserk_m_trousers": {
+   "file": "berserk_m_trousers.glb",
+   "shape": "trousers",
+   "variant": 0,
+   "kind": "garment",
+   "slot": "legs",
+   "frame": "body",
+   "side": "both",
+   "garment": {
+    "body": "m",
+    "layer": 0.011,
+    "legs": true
+   },
+   "lengthM": 0.7199,
+   "sizeM": [
+    0.4168,
+    0.7199,
+    0.276
+   ],
+   "bboxM": {
+    "min": [
+     -0.2084,
+     -0.68,
+     -0.1379
+    ],
+    "max": [
+     0.2084,
+     0.0399,
+     0.1381
+    ]
+   },
+   "com": [
+    0,
+    -0.3139,
+    -0.007
+   ],
+   "tris": 8998,
+   "verts": 6811,
+   "texPx": 1024,
+   "kb": 211
+  },
+  "bog_hide_axe": {
+   "file": "bog_hide_axe.glb",
+   "shape": "axe",
+   "variant": 2,
+   "kind": "blade",
+   "grip": [
+    0,
+    0,
+    0
+   ],
+   "tip": [
+    0,
+    0.546,
+    0
+   ],
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "faceNormal": [
+    0,
+    0,
+    1
+   ],
+   "edgeDir": [
+    1,
+    0,
+    0
+   ],
+   "lengthM": 0.7,
+   "sizeM": [
+    0.3386,
+    0.7,
+    0.1358
+   ],
+   "bboxM": {
+    "min": [
+     -0.1782,
+     -0.154,
+     -0.065
+    ],
+    "max": [
+     0.1604,
+     0.546,
+     0.0708
+    ]
+   },
+   "com": [
+    -0.0232,
+    0.2331,
+    -0.0001
+   ],
+   "tris": 6000,
+   "verts": 6172,
+   "texPx": 512,
+   "kb": 189,
+   "hands": 1,
+   "slot": "mainHand"
+  },
+  "bog_hide_axe_off": {
+   "file": "bog_hide_axe_off.glb",
+   "shape": "axe",
+   "variant": 2,
+   "kind": "blade",
+   "grip": [
+    0,
+    0,
+    0
+   ],
+   "tip": [
+    0,
+    0.546,
+    0
+   ],
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "faceNormal": [
+    0,
+    0,
+    1
+   ],
+   "edgeDir": [
+    1,
+    0,
+    0
+   ],
+   "lengthM": 0.7,
+   "sizeM": [
+    0.3312,
+    0.7,
+    0.147
+   ],
+   "bboxM": {
+    "min": [
+     -0.214,
+     -0.154,
+     -0.075
+    ],
+    "max": [
+     0.1171,
+     0.546,
+     0.072
+    ]
+   },
+   "com": [
+    -0.0259,
+    0.3284,
+    -0.0004
+   ],
+   "tris": 6000,
+   "verts": 7671,
+   "texPx": 512,
+   "kb": 217,
+   "hands": 1,
+   "slot": "offHand"
+  },
+  "bog_hide_gauntlets": {
+   "file": "bog_hide_gauntlets.glb",
+   "shape": "gauntlets",
+   "variant": 0,
+   "kind": "hand",
+   "lengthM": 0.1439,
+   "sizeM": [
+    0.32,
+    0.1439,
+    0.1592
+   ],
+   "bboxM": {
+    "min": [
+     0.58,
+     0.302,
+     -0.1226
+    ],
+    "max": [
+     0.9,
+     0.446,
+     0.0366
+    ]
+   },
+   "com": [
+    0.7125,
+    0.3686,
+    -0.0481
+   ],
+   "tris": 7000,
+   "verts": 7629,
+   "texPx": 512,
+   "kb": 216,
+   "slot": "gloves",
+   "frame": "body",
+   "side": "left",
+   "mirror": true,
+   "bones": [
+    "LeftHand",
+    "LeftForeArm"
+   ],
+   "landmarks": {
+    "cuff": [
+     0.58,
+     0.374,
+     -0.043
+    ],
+    "fingertips": [
+     0.9,
+     0.374,
+     -0.043
+    ]
+   }
+  },
+  "bog_hide_greataxe": {
+   "file": "bog_hide_greataxe.glb",
+   "shape": "greataxe",
+   "variant": 1,
+   "kind": "blade",
+   "grip": [
+    0,
+    0,
+    0
+   ],
+   "grip2": [
+    0.0072,
+    0.42,
+    -0.0007
+   ],
+   "tip": [
+    0,
+    1,
+    0
+   ],
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "faceNormal": [
+    0,
+    0,
+    1
+   ],
+   "edgeDir": [
+    1,
+    0,
+    0
+   ],
+   "lengthM": 1.25,
+   "sizeM": [
+    0.5187,
+    1.25,
+    0.1165
+   ],
+   "bboxM": {
+    "min": [
+     -0.2554,
+     -0.25,
+     -0.0596
+    ],
+    "max": [
+     0.2633,
+     1,
+     0.057
+    ]
+   },
+   "com": [
+    0.0036,
+    0.6003,
+    -0.0005
+   ],
+   "tris": 5256,
+   "verts": 4828,
+   "texPx": 512,
+   "kb": 159,
+   "hands": 2,
+   "slot": "mainHand"
+  },
+  "bog_hide_helm": {
+   "file": "bog_hide_helm.glb",
+   "shape": "tusk_helm",
+   "variant": 0,
+   "kind": "head",
+   "shellDepthM": 0.5632,
+   "mount": [
+    0,
+    0,
+    0
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ],
+   "forward": [
+    0,
+    0,
+    1
+   ],
+   "baseWidthM": 0.2043,
+   "baseDepthM": 0.5632,
+   "lengthM": 0.4134,
+   "sizeM": [
+    0.3005,
+    0.4134,
+    0.7235
+   ],
+   "bboxM": {
+    "min": [
+     -0.1504,
+     0,
+     -0.3957
+    ],
+    "max": [
+     0.1501,
+     0.4134,
+     0.3278
+    ]
+   },
+   "com": [
+    0.0002,
+    0.1992,
+    -0.0157
+   ],
+   "tris": 7000,
+   "verts": 7666,
+   "texPx": 1024,
+   "kb": 260,
+   "slot": "head"
+  },
+  "bog_hide_plate": {
+   "file": "bog_hide_plate.glb",
+   "shape": "chest_plate",
+   "variant": 0,
+   "kind": "torso",
+   "lengthM": 0.5659,
+   "sizeM": [
+    0.6,
+    0.5659,
+    0.4039
+   ],
+   "bboxM": {
+    "min": [
+     -0.3,
+     -0.0359,
+     -0.2219
+    ],
+    "max": [
+     0.3,
+     0.53,
+     0.1819
+    ]
+   },
+   "com": [
+    0.0004,
+    0.2529,
+    -0.0225
+   ],
+   "tris": 8000,
+   "verts": 10141,
+   "texPx": 1024,
+   "kb": 298,
+   "slot": "chest",
+   "frame": "body",
+   "side": "both",
+   "bones": [
+    "Spine2",
+    "Spine1",
+    "Spine",
+    "LeftShoulder",
+    "RightShoulder",
+    "LeftArm",
+    "RightArm"
+   ],
+   "landmarks": {
+    "neck": [
+     0,
+     0.5,
+     -0.02
+    ],
+    "hem": [
+     0,
+     -0.0359,
+     -0.02
+    ],
+    "shoulderL": [
+     0.3,
+     0.43,
+     -0.02
+    ],
+    "shoulderR": [
+     -0.3,
+     0.43,
+     -0.02
+    ]
+   }
+  },
+  "bog_warden_gauntlets": {
+   "file": "bog_warden_gauntlets.glb",
+   "shape": "gauntlets",
+   "variant": 0,
+   "kind": "hand",
+   "lengthM": 0.1591,
+   "sizeM": [
+    0.32,
+    0.1591,
+    0.141
+   ],
+   "bboxM": {
+    "min": [
+     0.58,
+     0.2945,
+     -0.1135
+    ],
+    "max": [
+     0.9,
+     0.4535,
+     0.0275
+    ]
+   },
+   "com": [
+    0.7095,
+    0.3717,
+    -0.0474
+   ],
+   "tris": 6890,
+   "verts": 6040,
+   "texPx": 512,
+   "kb": 182,
+   "slot": "gloves",
+   "frame": "body",
+   "side": "left",
+   "mirror": true,
+   "bones": [
+    "LeftHand",
+    "LeftForeArm"
+   ],
+   "landmarks": {
+    "cuff": [
+     0.58,
+     0.374,
+     -0.043
+    ],
+    "fingertips": [
+     0.9,
+     0.374,
+     -0.043
+    ]
+   }
+  },
+  "bog_warden_greatsword": {
+   "file": "bog_warden_greatsword.glb",
+   "shape": "greatsword",
+   "variant": 1,
+   "kind": "blade",
+   "guardY": -0.3759,
+   "grip": [
+    0,
+    0,
+    0
+   ],
+   "grip2": [
+    -0.0002,
+    0.18,
+    0.0011
+   ],
+   "tip": [
+    0,
+    1.3875,
+    0
+   ],
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "faceNormal": [
+    0,
+    0,
+    1
+   ],
+   "edgeDir": [
+    1,
+    0,
+    0
+   ],
+   "lengthM": 1.5,
+   "sizeM": [
+    0.3493,
+    1.5,
+    0.1307
+   ],
+   "bboxM": {
+    "min": [
+     -0.1754,
+     -0.1125,
+     -0.0644
+    ],
+    "max": [
+     0.1739,
+     1.3875,
+     0.0664
+    ]
+   },
+   "com": [
+    0.0003,
+    0.6224,
+    0.0007
+   ],
+   "tris": 4040,
+   "verts": 3349,
+   "texPx": 512,
+   "kb": 122,
+   "hands": 2,
+   "slot": "mainHand"
+  },
+  "bog_warden_greaves": {
+   "file": "bog_warden_greaves.glb",
+   "shape": "greaves",
+   "variant": 0,
+   "kind": "foot",
+   "lengthM": 0.5908,
+   "sizeM": [
+    0.2629,
+    0.5908,
+    0.4079
+   ],
+   "bboxM": {
+    "min": [
+     -0.0398,
+     -1.028,
+     -0.1689
+    ],
+    "max": [
+     0.2232,
+     -0.4372,
+     0.239
+    ]
+   },
+   "com": [
+    0.092,
+    -0.7792,
+    -0.0074
+   ],
+   "tris": 7999,
+   "verts": 12830,
+   "texPx": 1024,
+   "kb": 334,
+   "slot": "boots",
+   "frame": "body",
+   "side": "left",
+   "mirror": true,
+   "bones": [
+    "LeftFoot",
+    "LeftToeBase",
+    "LeftLeg"
+   ],
+   "landmarks": {
+    "sole": [
+     0.0917,
+     -1.028,
+     0.035
+    ],
+    "toe": [
+     0.0917,
+     -0.998,
+     0.239
+    ],
+    "heel": [
+     0.0917,
+     -0.998,
+     -0.1689
+    ],
+    "top": [
+     0.0917,
+     -0.4372,
+     0.035
+    ]
+   }
+  },
+  "bog_warden_helm": {
+   "file": "bog_warden_helm.glb",
+   "shape": "plume_helm",
+   "variant": 1,
+   "kind": "head",
+   "shellDepthM": 0.272,
+   "mount": [
+    0,
+    0,
+    0
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ],
+   "forward": [
+    0,
+    0,
+    1
+   ],
+   "baseWidthM": 0.1873,
+   "baseDepthM": 0.272,
+   "lengthM": 0.474,
+   "sizeM": [
+    0.27,
+    0.474,
+    0.4584
+   ],
+   "bboxM": {
+    "min": [
+     -0.1351,
+     -0.0118,
+     -0.2782
+    ],
+    "max": [
+     0.1349,
+     0.4621,
+     0.1802
+    ]
+   },
+   "com": [
+    0,
+    0.2293,
+    -0.0284
+   ],
+   "tris": 7000,
+   "verts": 8866,
+   "texPx": 1024,
+   "kb": 273,
+   "slot": "head"
+  },
+  "bog_warden_plate": {
+   "file": "bog_warden_plate.glb",
+   "shape": "chest_plate",
+   "variant": 0,
+   "kind": "torso",
+   "lengthM": 1.0718,
+   "sizeM": [
+    0.5996,
+    1.0718,
+    1.0303
+   ],
+   "bboxM": {
+    "min": [
+     -0.2996,
+     -0.5418,
+     -0.5357
+    ],
+    "max": [
+     0.3,
+     0.53,
+     0.4946
+    ]
+   },
+   "com": [
+    0.0149,
+    -0.0416,
+    -0.0129
+   ],
+   "tris": 7999,
+   "verts": 10110,
+   "texPx": 1024,
+   "kb": 309,
+   "slot": "chest",
+   "frame": "body",
+   "side": "both",
+   "bones": [
+    "Spine2",
+    "Spine1",
+    "Spine",
+    "LeftShoulder",
+    "RightShoulder",
+    "LeftArm",
+    "RightArm"
+   ],
+   "landmarks": {
+    "neck": [
+     0,
+     0.5,
+     -0.0205
+    ],
+    "hem": [
+     0,
+     -0.5418,
+     -0.0205
+    ],
+    "shoulderL": [
+     0.3,
+     0.43,
+     -0.0205
+    ],
+    "shoulderR": [
+     -0.2996,
+     0.43,
+     -0.0205
+    ]
+   }
+  },
+  "bog_warden_shield": {
+   "file": "bog_warden_shield.glb",
+   "shape": "round_shield",
+   "variant": 2,
+   "kind": "shield",
+   "mount": [
+    0,
+    0,
+    0
+   ],
+   "grip": [
+    0,
+    0,
+    0
+   ],
+   "faceNormal": [
+    0,
+    0,
+    1
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ],
+   "lengthM": 0.7661,
+   "sizeM": [
+    0.7,
+    0.7661,
+    0.1267
+   ],
+   "bboxM": {
+    "min": [
+     -0.35,
+     -0.383,
+     -0.071
+    ],
+    "max": [
+     0.35,
+     0.383,
+     0.0557
+    ]
+   },
+   "com": [
+    -0.0005,
+    0.0035,
+    -0.018
+   ],
+   "tris": 6982,
+   "verts": 6533,
+   "texPx": 1024,
+   "kb": 227,
+   "slot": "offHand"
+  },
+  "bog_warden_sword": {
+   "file": "bog_warden_sword.glb",
+   "shape": "sword",
+   "variant": 2,
+   "kind": "blade",
+   "guardY": -0.2702,
+   "grip": [
+    0,
+    0,
+    0
+   ],
+   "tip": [
+    0,
+    0.885,
+    0
+   ],
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "faceNormal": [
+    0,
+    0,
+    1
+   ],
+   "edgeDir": [
+    1,
+    0,
+    0
+   ],
+   "lengthM": 1,
+   "sizeM": [
+    0.2592,
+    1,
+    0.1003
+   ],
+   "bboxM": {
+    "min": [
+     -0.129,
+     -0.115,
+     -0.0494
+    ],
+    "max": [
+     0.1302,
+     0.885,
+     0.0508
+    ]
+   },
+   "com": [
+    -0.0006,
+    0.3605,
+    0.0005
+   ],
+   "tris": 4806,
+   "verts": 4156,
+   "texPx": 512,
+   "kb": 140,
+   "hands": 1,
+   "slot": "mainHand"
+  },
+  "dawn_gauntlets": {
+   "file": "dawn_gauntlets.glb",
+   "shape": "gauntlets",
+   "variant": 0,
+   "kind": "hand",
+   "lengthM": 0.1354,
+   "sizeM": [
+    0.32,
+    0.1354,
+    0.1454
+   ],
+   "bboxM": {
+    "min": [
+     0.58,
+     0.3063,
+     -0.1157
+    ],
+    "max": [
+     0.9,
+     0.4417,
+     0.0297
+    ]
+   },
+   "com": [
+    0.7185,
+    0.3696,
+    -0.0468
+   ],
+   "tris": 6360,
+   "verts": 5409,
+   "texPx": 512,
+   "kb": 171,
+   "slot": "gloves",
+   "frame": "body",
+   "side": "left",
+   "mirror": true,
+   "bones": [
+    "LeftHand",
+    "LeftForeArm"
+   ],
+   "landmarks": {
+    "cuff": [
+     0.58,
+     0.374,
+     -0.043
+    ],
+    "fingertips": [
+     0.9,
+     0.374,
+     -0.043
+    ]
+   }
+  },
+  "dawn_greatsword": {
+   "file": "dawn_greatsword.glb",
+   "shape": "greatsword",
+   "variant": 2,
+   "kind": "blade",
+   "guardY": -0.4176,
+   "grip": [
+    0,
+    0,
+    0
+   ],
+   "grip2": [
+    -0.0015,
+    0.1598,
+    0.0021
+   ],
+   "tip": [
+    0,
+    1.4001,
+    0
+   ],
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "faceNormal": [
+    0,
+    0,
+    1
+   ],
+   "edgeDir": [
+    1,
+    0,
+    0
+   ],
+   "lengthM": 1.5,
+   "sizeM": [
+    0.4512,
+    1.5,
+    0.1451
+   ],
+   "bboxM": {
+    "min": [
+     -0.2255,
+     -0.0999,
+     -0.0701
+    ],
+    "max": [
+     0.2257,
+     1.4001,
+     0.075
+    ]
+   },
+   "com": [
+    -0.0009,
+    0.5777,
+    0.0027
+   ],
+   "tris": 4994,
+   "verts": 4402,
+   "texPx": 512,
+   "kb": 143,
+   "hands": 2,
+   "slot": "mainHand"
+  },
+  "dawn_greaves": {
+   "file": "dawn_greaves.glb",
+   "shape": "greaves",
+   "variant": 0,
+   "kind": "foot",
+   "lengthM": 0.5956,
+   "sizeM": [
+    0.2558,
+    0.5956,
+    0.4138
+   ],
+   "bboxM": {
+    "min": [
+     -0.0354,
+     -1.0278,
+     -0.1748
+    ],
+    "max": [
+     0.2204,
+     -0.4322,
+     0.239
+    ]
+   },
+   "com": [
+    0.0922,
+    -0.7498,
+    -0.0265
+   ],
+   "tris": 7998,
+   "verts": 7944,
+   "texPx": 1024,
+   "kb": 265,
+   "slot": "boots",
+   "frame": "body",
+   "side": "left",
+   "mirror": true,
+   "bones": [
+    "LeftFoot",
+    "LeftToeBase",
+    "LeftLeg"
+   ],
+   "landmarks": {
+    "sole": [
+     0.0925,
+     -1.0278,
+     0.0321
+    ],
+    "toe": [
+     0.0925,
+     -0.9978,
+     0.239
+    ],
+    "heel": [
+     0.0925,
+     -0.9978,
+     -0.1748
+    ],
+    "top": [
+     0.0925,
+     -0.4322,
+     0.0321
+    ]
+   }
+  },
+  "dawn_helm": {
+   "file": "dawn_helm.glb",
+   "shape": "plume_helm",
+   "variant": 2,
+   "kind": "head",
+   "shellDepthM": 0.3496,
+   "mount": [
+    0,
+    0,
+    0
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ],
+   "forward": [
+    0,
+    0,
+    1
+   ],
+   "baseWidthM": 0.2496,
+   "baseDepthM": 0.3496,
+   "lengthM": 0.4089,
+   "sizeM": [
+    0.2697,
+    0.4089,
+    0.4534
+   ],
+   "bboxM": {
+    "min": [
+     -0.1251,
+     -0.0184,
+     -0.2061
+    ],
+    "max": [
+     0.1446,
+     0.3905,
+     0.2473
+    ]
+   },
+   "com": [
+    0.006,
+    0.1799,
+    0.0027
+   ],
+   "tris": 6999,
+   "verts": 9413,
+   "texPx": 1024,
+   "kb": 286,
+   "slot": "head"
+  },
+  "dawn_plate": {
+   "file": "dawn_plate.glb",
+   "shape": "chest_plate",
+   "variant": 0,
+   "kind": "torso",
+   "lengthM": 0.5822,
+   "sizeM": [
+    0.6,
+    0.5822,
+    0.3007
+   ],
+   "bboxM": {
+    "min": [
+     -0.3,
+     -0.0522,
+     -0.1703
+    ],
+    "max": [
+     0.3,
+     0.53,
+     0.1303
+    ]
+   },
+   "com": [
+    -0.0009,
+    0.2675,
+    -0.0201
+   ],
+   "tris": 7999,
+   "verts": 10297,
+   "texPx": 1024,
+   "kb": 331,
+   "slot": "chest",
+   "frame": "body",
+   "side": "both",
+   "bones": [
+    "Spine2",
+    "Spine1",
+    "Spine",
+    "LeftShoulder",
+    "RightShoulder",
+    "LeftArm",
+    "RightArm"
+   ],
+   "landmarks": {
+    "neck": [
+     0,
+     0.5,
+     -0.02
+    ],
+    "hem": [
+     0,
+     -0.0522,
+     -0.02
+    ],
+    "shoulderL": [
+     0.3,
+     0.43,
+     -0.02
+    ],
+    "shoulderR": [
+     -0.3,
+     0.43,
+     -0.02
+    ]
+   }
+  },
+  "dawn_shield": {
+   "file": "dawn_shield.glb",
+   "shape": "kite_shield",
+   "variant": 1,
+   "kind": "shield",
+   "mount": [
+    0,
+    0,
+    0
+   ],
+   "grip": [
+    0,
+    0,
+    0
+   ],
+   "faceNormal": [
+    0,
+    0,
+    1
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ],
+   "lengthM": 1,
+   "sizeM": [
+    0.8361,
+    1,
+    0.071
+   ],
+   "bboxM": {
+    "min": [
+     -0.4181,
+     -0.5,
+     -0.0252
+    ],
+    "max": [
+     0.4181,
+     0.5,
+     0.0458
+    ]
+   },
+   "com": [
+    -0.0001,
+    0.0616,
+    0.013
+   ],
+   "tris": 4262,
+   "verts": 2803,
+   "texPx": 1024,
+   "kb": 142,
+   "slot": "offHand"
+  },
+  "dawn_sword": {
+   "file": "dawn_sword.glb",
+   "shape": "sword",
+   "variant": 4,
+   "kind": "blade",
+   "guardY": -0.2862,
+   "grip": [
+    0,
+    0,
+    0
+   ],
+   "tip": [
+    0,
+    0.893,
+    0
+   ],
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "faceNormal": [
+    0,
+    0,
+    1
+   ],
+   "edgeDir": [
+    1,
+    0,
+    0
+   ],
+   "lengthM": 1,
+   "sizeM": [
+    0.279,
+    1,
+    0.0524
+   ],
+   "bboxM": {
+    "min": [
+     -0.1396,
+     -0.107,
+     -0.0258
+    ],
+    "max": [
+     0.1393,
+     0.893,
+     0.0266
+    ]
+   },
+   "com": [
+    -0.0002,
+    0.341,
+    0.0005
+   ],
+   "tris": 3668,
+   "verts": 3160,
+   "texPx": 512,
+   "kb": 115,
+   "hands": 1,
+   "slot": "mainHand"
+  },
+  "great_axe": {
+   "file": "great_axe.glb",
+   "shape": "greataxe",
+   "variant": 0,
+   "kind": "blade",
+   "grip": [
+    0,
+    0,
+    0
+   ],
+   "grip2": [
+    0,
+    0.42,
+    0.0001
+   ],
+   "tip": [
+    0,
+    1,
+    0
+   ],
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "faceNormal": [
+    0,
+    0,
+    1
+   ],
+   "edgeDir": [
+    1,
+    0,
+    0
+   ],
+   "lengthM": 1.25,
+   "sizeM": [
+    0.6058,
+    1.25,
+    0.0733
+   ],
+   "bboxM": {
+    "min": [
+     -0.3027,
+     -0.25,
+     -0.0367
+    ],
+    "max": [
+     0.3031,
+     1,
+     0.0366
+    ]
+   },
+   "com": [
+    0.0003,
+    0.6229,
+    0.0002
+   ],
+   "tris": 4690,
+   "verts": 5084,
+   "texPx": 512,
+   "kb": 155,
+   "hands": 2,
+   "slot": "mainHand"
+  },
+  "guard_boots": {
+   "file": "guard_boots.glb",
+   "shape": "greaves",
+   "variant": 0,
+   "kind": "foot",
+   "lengthM": 0.3735,
+   "sizeM": [
+    0.21,
+    0.3735,
+    0.4108
+   ],
+   "bboxM": {
+    "min": [
+     -0.0167,
+     -1.028,
+     -0.1718
+    ],
+    "max": [
+     0.1933,
+     -0.6545,
+     0.239
+    ]
+   },
+   "com": [
+    0.0856,
+    -0.8533,
+    -0.0228
+   ],
+   "tris": 8000,
+   "verts": 8997,
+   "texPx": 1024,
+   "kb": 271,
+   "slot": "boots",
+   "frame": "body",
+   "side": "left",
+   "mirror": true,
+   "bones": [
+    "LeftFoot",
+    "LeftToeBase",
+    "LeftLeg"
+   ],
+   "landmarks": {
+    "sole": [
+     0.0883,
+     -1.028,
+     0.0336
+    ],
+    "toe": [
+     0.0883,
+     -0.998,
+     0.239
+    ],
+    "heel": [
+     0.0883,
+     -0.998,
+     -0.1718
+    ],
+    "top": [
+     0.0883,
+     -0.6545,
+     0.0336
+    ]
+   }
+  },
+  "guard_gauntlets": {
+   "file": "guard_gauntlets.glb",
+   "shape": "gauntlets",
+   "variant": 0,
+   "kind": "hand",
+   "lengthM": 0.143,
+   "sizeM": [
+    0.32,
+    0.143,
+    0.1345
+   ],
+   "bboxM": {
+    "min": [
+     0.58,
+     0.3025,
+     -0.1102
+    ],
+    "max": [
+     0.9,
+     0.4455,
+     0.0242
+    ]
+   },
+   "com": [
+    0.7031,
+    0.3751,
+    -0.0461
+   ],
+   "tris": 6519,
+   "verts": 6251,
+   "texPx": 512,
+   "kb": 180,
+   "slot": "gloves",
+   "frame": "body",
+   "side": "left",
+   "mirror": true,
+   "bones": [
+    "LeftHand",
+    "LeftForeArm"
+   ],
+   "landmarks": {
+    "cuff": [
+     0.58,
+     0.374,
+     -0.043
+    ],
+    "fingertips": [
+     0.9,
+     0.374,
+     -0.043
+    ]
+   }
+  },
+  "guard_helm": {
+   "file": "guard_helm.glb",
+   "shape": "plume_helm",
+   "variant": 0,
+   "kind": "head",
+   "mount": [
+    0,
+    0,
+    0
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ],
+   "forward": [
+    0,
+    0,
+    1
+   ],
+   "baseWidthM": 0.2088,
+   "baseDepthM": 0.4292,
+   "lengthM": 0.4602,
+   "sizeM": [
+    0.27,
+    0.4602,
+    0.4778
+   ],
+   "bboxM": {
+    "min": [
+     -0.1351,
+     -0.0023,
+     -0.2246
+    ],
+    "max": [
+     0.1349,
+     0.4579,
+     0.2532
+    ]
+   },
+   "com": [
+    0.0002,
+    0.2126,
+    -0.0021
+   ],
+   "tris": 7000,
+   "verts": 10709,
+   "texPx": 1024,
+   "kb": 319,
+   "shellDepthM": 0.4292,
+   "slot": "head"
+  },
+  "guard_plate": {
+   "file": "guard_plate.glb",
+   "shape": "chest_plate",
+   "variant": 0,
+   "kind": "torso",
+   "lengthM": 0.5165,
+   "sizeM": [
+    0.6,
+    0.5165,
+    0.3335
+   ],
+   "bboxM": {
+    "min": [
+     -0.3,
+     0.0135,
+     -0.1868
+    ],
+    "max": [
+     0.3,
+     0.53,
+     0.1468
+    ]
+   },
+   "com": [
+    0.0001,
+    0.2976,
+    -0.0335
+   ],
+   "tris": 8000,
+   "verts": 8023,
+   "texPx": 1024,
+   "kb": 243,
+   "slot": "chest",
+   "frame": "body",
+   "side": "both",
+   "bones": [
+    "Spine2",
+    "Spine1",
+    "Spine",
+    "LeftShoulder",
+    "RightShoulder",
+    "LeftArm",
+    "RightArm"
+   ],
+   "landmarks": {
+    "neck": [
+     0,
+     0.5,
+     -0.02
+    ],
+    "hem": [
+     0,
+     0.0135,
+     -0.02
+    ],
+    "shoulderL": [
+     0.3,
+     0.43,
+     -0.02
+    ],
+    "shoulderR": [
+     -0.3,
+     0.43,
+     -0.02
+    ]
+   }
+  },
+  "guard_shield": {
+   "file": "guard_shield.glb",
+   "shape": "kite_shield",
+   "variant": 0,
+   "kind": "shield",
+   "mount": [
+    0,
+    0,
+    0
+   ],
+   "grip": [
+    0,
+    0,
+    0
+   ],
+   "faceNormal": [
+    0,
+    0,
+    1
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ],
+   "lengthM": 1,
+   "sizeM": [
+    0.5631,
+    1,
+    0.0781
+   ],
+   "bboxM": {
+    "min": [
+     -0.2815,
+     -0.5,
+     -0.0171
+    ],
+    "max": [
+     0.2815,
+     0.5,
+     0.061
+    ]
+   },
+   "com": [
+    0.0002,
+    0.0446,
+    0.0205
+   ],
+   "tris": 2348,
+   "verts": 1551,
+   "texPx": 1024,
+   "kb": 93,
+   "slot": "offHand"
+  },
+  "guard_sword": {
+   "file": "guard_sword.glb",
+   "shape": "sword",
+   "variant": 1,
+   "kind": "blade",
+   "guardY": -0.2855,
+   "grip": [
+    0,
+    0,
+    0
+   ],
+   "tip": [
+    0,
+    0.893,
+    0
+   ],
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "faceNormal": [
+    0,
+    0,
+    1
+   ],
+   "edgeDir": [
+    1,
+    0,
+    0
+   ],
+   "lengthM": 1,
+   "sizeM": [
+    0.3517,
+    1,
+    0.1052
+   ],
+   "bboxM": {
+    "min": [
+     -0.1756,
+     -0.107,
+     -0.0518
+    ],
+    "max": [
+     0.1761,
+     0.893,
+     0.0533
+    ]
+   },
+   "com": [
+    -0.0001,
+    0.3414,
+    0.0007
+   ],
+   "tris": 4618,
+   "verts": 4060,
+   "texPx": 512,
+   "kb": 137,
+   "hands": 1,
+   "slot": "mainHand"
+  },
+  "hand_axe": {
+   "file": "hand_axe.glb",
+   "shape": "axe",
+   "variant": 0,
+   "kind": "blade",
+   "grip": [
+    0,
+    0,
+    0
+   ],
+   "tip": [
+    0,
+    0.546,
+    0
+   ],
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "faceNormal": [
+    0,
+    0,
+    1
+   ],
+   "edgeDir": [
+    1,
+    0,
+    0
+   ],
+   "lengthM": 0.7,
+   "sizeM": [
+    0.3493,
+    0.7,
+    0.0841
+   ],
+   "bboxM": {
+    "min": [
+     -0.1813,
+     -0.154,
+     -0.0431
+    ],
+    "max": [
+     0.168,
+     0.546,
+     0.041
+    ]
+   },
+   "com": [
+    -0.0134,
+    0.2696,
+    -0.0014
+   ],
+   "tris": 5342,
+   "verts": 4101,
+   "texPx": 512,
+   "kb": 131,
+   "hands": 1,
+   "slot": "mainHand"
+  },
+  "hedge_hat": {
+   "file": "hedge_hat.glb",
+   "shape": "hat_wide",
+   "variant": 0,
+   "kind": "head",
+   "mount": [
+    0,
+    0,
+    0
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ],
+   "forward": [
+    0,
+    0,
+    1
+   ],
+   "baseWidthM": 0.3605,
+   "baseDepthM": 0.56,
+   "lengthM": 0.4285,
+   "sizeM": [
+    0.4671,
+    0.4285,
+    0.56
+   ],
+   "bboxM": {
+    "min": [
+     -0.2868,
+     -0.1221,
+     -0.28
+    ],
+    "max": [
+     0.1803,
+     0.3064,
+     0.28
+    ]
+   },
+   "com": [
+    -0.0697,
+    0.0873,
+    0.0074
+   ],
+   "tris": 6174,
+   "verts": 7325,
+   "texPx": 1024,
+   "kb": 248,
+   "slot": "head"
+  },
+  "hedge_orb": {
+   "file": "hedge_orb.glb",
+   "shape": "orb",
+   "variant": 0,
+   "kind": "orb",
+   "grip": [
+    0,
+    0,
+    0
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ],
+   "lengthM": 0.2377,
+   "sizeM": [
+    0.2398,
+    0.2377,
+    0.2395
+   ],
+   "bboxM": {
+    "min": [
+     -0.1199,
+     -0.1189,
+     -0.1198
+    ],
+    "max": [
+     0.1199,
+     0.1188,
+     0.1198
+    ]
+   },
+   "com": [
+    0,
+    -0.0041,
+    0
+   ],
+   "tris": 5000,
+   "verts": 3275,
+   "texPx": 512,
+   "kb": 112,
+   "slot": "offHand"
+  },
+  "hedge_staff": {
+   "file": "hedge_staff.glb",
+   "shape": "staff",
+   "variant": 1,
+   "kind": "blade",
+   "grip": [
+    0,
+    0,
+    0
+   ],
+   "grip2": [
+    -0.073,
+    0.3,
+    0.0239
+   ],
+   "tip": [
+    0,
+    0.986,
+    0
+   ],
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "faceNormal": [
+    0,
+    0,
+    1
+   ],
+   "edgeDir": [
+    1,
+    0,
+    0
+   ],
+   "lengthM": 1.7,
+   "sizeM": [
+    0.3061,
+    1.7,
+    0.2518
+   ],
+   "bboxM": {
+    "min": [
+     -0.1783,
+     -0.714,
+     -0.1229
+    ],
+    "max": [
+     0.1278,
+     0.986,
+     0.1289
+    ]
+   },
+   "com": [
+    -0.0098,
+    0.2338,
+    0.0077
+   ],
+   "tris": 3316,
+   "verts": 3668,
+   "texPx": 512,
+   "kb": 128,
+   "hands": 2,
+   "slot": "mainHand"
+  },
+  "hedge_wand": {
+   "file": "hedge_wand.glb",
+   "shape": "wand",
+   "variant": 1,
+   "kind": "blade",
+   "grip": [
+    0,
+    0,
+    0
+   ],
+   "tip": [
+    0,
+    0.344,
+    0
+   ],
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "faceNormal": [
+    0,
+    0,
+    1
+   ],
+   "edgeDir": [
+    1,
+    0,
+    0
+   ],
+   "lengthM": 0.4,
+   "sizeM": [
+    0.0437,
+    0.4,
+    0.0414
+   ],
+   "bboxM": {
+    "min": [
+     -0.0219,
+     -0.056,
+     -0.0201
+    ],
+    "max": [
+     0.0218,
+     0.344,
+     0.0213
+    ]
+   },
+   "com": [
+    -0.0008,
+    0.1072,
+    -0.0007
+   ],
+   "tris": 3000,
+   "verts": 2767,
+   "texPx": 512,
+   "kb": 95,
+   "hands": 1,
+   "slot": "mainHand"
+  },
+  "hunters_dagger": {
+   "file": "hunters_dagger.glb",
+   "shape": "dagger",
+   "variant": 1,
+   "kind": "blade",
+   "guardY": -0.1114,
+   "grip": [
+    0,
+    0,
+    0
+   ],
+   "tip": [
+    0,
+    0.3881,
+    0
+   ],
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "faceNormal": [
+    0,
+    0,
+    1
+   ],
+   "edgeDir": [
+    1,
+    0,
+    0
+   ],
+   "lengthM": 0.45,
+   "sizeM": [
+    0.0943,
+    0.45,
+    0.0488
+   ],
+   "bboxM": {
+    "min": [
+     -0.0664,
+     -0.0619,
+     -0.0231
+    ],
+    "max": [
+     0.028,
+     0.3881,
+     0.0258
+    ]
+   },
+   "com": [
+    -0.013,
+    0.1354,
+    0.0009
+   ],
+   "tris": 3780,
+   "verts": 2994,
+   "texPx": 512,
+   "kb": 102,
+   "hands": 1,
+   "slot": "mainHand"
+  },
+  "hunters_dagger_off": {
+   "file": "hunters_dagger.glb",
+   "shape": "dagger",
+   "variant": 1,
+   "kind": "blade",
+   "guardY": -0.1114,
+   "grip": [
+    0,
+    0,
+    0
+   ],
+   "tip": [
+    0,
+    0.3881,
+    0
+   ],
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "faceNormal": [
+    0,
+    0,
+    1
+   ],
+   "edgeDir": [
+    1,
+    0,
+    0
+   ],
+   "lengthM": 0.45,
+   "sizeM": [
+    0.0943,
+    0.45,
+    0.0488
+   ],
+   "bboxM": {
+    "min": [
+     -0.0664,
+     -0.0619,
+     -0.0231
+    ],
+    "max": [
+     0.028,
+     0.3881,
+     0.0258
+    ]
+   },
+   "com": [
+    -0.013,
+    0.1354,
+    0.0009
+   ],
+   "tris": 3780,
+   "verts": 2994,
+   "texPx": 512,
+   "kb": 102,
+   "hands": 1,
+   "alias": "hunters_dagger",
+   "slot": "mainHand"
+  },
+  "jarl_axe": {
+   "file": "jarl_axe.glb",
+   "shape": "greataxe",
+   "variant": 2,
+   "kind": "blade",
+   "grip": [
+    0,
+    0,
+    0
+   ],
+   "grip2": [
+    0.0008,
+    0.42,
+    0
+   ],
+   "tip": [
+    0,
+    1,
+    0
+   ],
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "faceNormal": [
+    0,
+    0,
+    1
+   ],
+   "edgeDir": [
+    -1,
+    0,
+    0
+   ],
+   "lengthM": 1.25,
+   "sizeM": [
+    0.7774,
+    1.25,
+    0.1169
+   ],
+   "bboxM": {
+    "min": [
+     -0.3881,
+     -0.25,
+     -0.0581
+    ],
+    "max": [
+     0.3893,
+     1,
+     0.0588
+    ]
+   },
+   "com": [
+    -0.0015,
+    0.5439,
+    0.0002
+   ],
+   "tris": 7000,
+   "verts": 5997,
+   "texPx": 512,
+   "kb": 184,
+   "hands": 2,
+   "slot": "mainHand"
+  },
+  "jarl_axe_1h": {
+   "file": "jarl_axe_1h.glb",
+   "shape": "axe",
+   "variant": 3,
+   "kind": "blade",
+   "grip": [
+    0,
+    0,
+    0
+   ],
+   "tip": [
+    0,
+    0.546,
+    0
+   ],
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "faceNormal": [
+    0,
+    0,
+    1
+   ],
+   "edgeDir": [
+    -1,
+    0,
+    0
+   ],
+   "lengthM": 0.7,
+   "sizeM": [
+    0.3782,
+    0.7,
+    0.1202
+   ],
+   "bboxM": {
+    "min": [
+     -0.1894,
+     -0.154,
+     -0.06
+    ],
+    "max": [
+     0.1888,
+     0.546,
+     0.0602
+    ]
+   },
+   "com": [
+    -0.0004,
+    0.2743,
+    0.0002
+   ],
+   "tris": 6000,
+   "verts": 5819,
+   "texPx": 512,
+   "kb": 175,
+   "hands": 1,
+   "slot": "mainHand"
+  },
+  "jarl_axe_off": {
+   "file": "jarl_axe_off.glb",
+   "shape": "axe",
+   "variant": 3,
+   "kind": "blade",
+   "grip": [
+    0,
+    0,
+    0
+   ],
+   "tip": [
+    0,
+    0.546,
+    0
+   ],
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "faceNormal": [
+    0,
+    0,
+    1
+   ],
+   "edgeDir": [
+    1,
+    0,
+    0
+   ],
+   "lengthM": 0.7,
+   "sizeM": [
+    0.3179,
+    0.7,
+    0.0936
+   ],
+   "bboxM": {
+    "min": [
+     -0.2005,
+     -0.154,
+     -0.0466
+    ],
+    "max": [
+     0.1174,
+     0.546,
+     0.047
+    ]
+   },
+   "com": [
+    -0.0291,
+    0.3001,
+    0.0007
+   ],
+   "tris": 6000,
+   "verts": 6153,
+   "texPx": 512,
+   "kb": 179,
+   "hands": 1,
+   "slot": "offHand"
+  },
+  "jarl_gauntlets": {
+   "file": "jarl_gauntlets.glb",
+   "shape": "gauntlets",
+   "variant": 0,
+   "kind": "hand",
+   "lengthM": 0.1394,
+   "sizeM": [
+    0.32,
+    0.1394,
+    0.1394
+   ],
+   "bboxM": {
+    "min": [
+     0.58,
+     0.3043,
+     -0.1127
+    ],
+    "max": [
+     0.9,
+     0.4437,
+     0.0267
+    ]
+   },
+   "com": [
+    0.7124,
+    0.3645,
+    -0.0492
+   ],
+   "tris": 6580,
+   "verts": 5108,
+   "texPx": 512,
+   "kb": 162,
+   "slot": "gloves",
+   "frame": "body",
+   "side": "left",
+   "mirror": true,
+   "bones": [
+    "LeftHand",
+    "LeftForeArm"
+   ],
+   "landmarks": {
+    "cuff": [
+     0.58,
+     0.374,
+     -0.043
+    ],
+    "fingertips": [
+     0.9,
+     0.374,
+     -0.043
+    ]
+   }
+  },
+  "jarl_greaves": {
+   "file": "jarl_greaves.glb",
+   "shape": "greaves",
+   "variant": 0,
+   "kind": "foot",
+   "lengthM": 0.5028,
+   "sizeM": [
+    0.2293,
+    0.5028,
+    0.4192
+   ],
+   "bboxM": {
+    "min": [
+     -0.025,
+     -1.0276,
+     -0.1802
+    ],
+    "max": [
+     0.2043,
+     -0.5248,
+     0.239
+    ]
+   },
+   "com": [
+    0.0922,
+    -0.8134,
+    -0.0185
+   ],
+   "tris": 8000,
+   "verts": 9213,
+   "texPx": 1024,
+   "kb": 266,
+   "slot": "boots",
+   "frame": "body",
+   "side": "left",
+   "mirror": true,
+   "bones": [
+    "LeftFoot",
+    "LeftToeBase",
+    "LeftLeg"
+   ],
+   "landmarks": {
+    "sole": [
+     0.0896,
+     -1.0276,
+     0.0294
+    ],
+    "toe": [
+     0.0896,
+     -0.9976,
+     0.239
+    ],
+    "heel": [
+     0.0896,
+     -0.9976,
+     -0.1802
+    ],
+    "top": [
+     0.0896,
+     -0.5248,
+     0.0294
+    ]
+   }
+  },
+  "jarl_helm": {
+   "file": "jarl_helm.glb",
+   "shape": "horned_helm",
+   "variant": 0,
+   "kind": "head",
+   "shellDepthM": 0.2401,
+   "mount": [
+    0,
+    0,
+    0
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ],
+   "forward": [
+    0,
+    0,
+    1
+   ],
+   "baseWidthM": 0.2739,
+   "baseDepthM": 0.2401,
+   "lengthM": 0.399,
+   "sizeM": [
+    0.4456,
+    0.399,
+    0.3295
+   ],
+   "bboxM": {
+    "min": [
+     -0.2227,
+     -0.0259,
+     -0.1587
+    ],
+    "max": [
+     0.2229,
+     0.373,
+     0.1707
+    ]
+   },
+   "com": [
+    -0.0002,
+    0.1595,
+    0.0051
+   ],
+   "tris": 7000,
+   "verts": 6335,
+   "texPx": 1024,
+   "kb": 200,
+   "slot": "head"
+  },
+  "jarl_plate": {
+   "file": "jarl_plate.glb",
+   "shape": "chest_plate",
+   "variant": 0,
+   "kind": "torso",
+   "lengthM": 0.7194,
+   "sizeM": [
+    0.6,
+    0.7194,
+    0.5679
+   ],
+   "bboxM": {
+    "min": [
+     -0.3,
+     -0.1894,
+     -0.3039
+    ],
+    "max": [
+     0.3,
+     0.53,
+     0.2639
+    ]
+   },
+   "com": [
+    0.0003,
+    0.172,
+    -0.0536
+   ],
+   "tris": 8000,
+   "verts": 10504,
+   "texPx": 1024,
+   "kb": 291,
+   "slot": "chest",
+   "frame": "body",
+   "side": "both",
+   "bones": [
+    "Spine2",
+    "Spine1",
+    "Spine",
+    "LeftShoulder",
+    "RightShoulder",
+    "LeftArm",
+    "RightArm"
+   ],
+   "landmarks": {
+    "neck": [
+     0,
+     0.5,
+     -0.02
+    ],
+    "hem": [
+     0,
+     -0.1894,
+     -0.02
+    ],
+    "shoulderL": [
+     0.3,
+     0.43,
+     -0.02
+    ],
+    "shoulderR": [
+     -0.3,
+     0.43,
+     -0.02
+    ]
+   }
+  },
+  "leather_boots": {
+   "file": "leather_boots.glb",
+   "shape": "boot_cuffs",
+   "variant": 0,
+   "kind": "foot",
+   "lengthM": 0.3582,
+   "sizeM": [
+    0.1795,
+    0.3582,
+    0.3858
+   ],
+   "bboxM": {
+    "min": [
+     0.0049,
+     -1.0279,
+     -0.1468
+    ],
+    "max": [
+     0.1844,
+     -0.6697,
+     0.239
+    ]
+   },
+   "com": [
+    0.0931,
+    -0.8693,
+    0.0004
+   ],
+   "tris": 8000,
+   "verts": 9913,
+   "texPx": 1024,
+   "kb": 283,
+   "slot": "boots",
+   "frame": "body",
+   "side": "left",
+   "mirror": true,
+   "bones": [
+    "LeftFoot",
+    "LeftToeBase",
+    "LeftLeg"
+   ],
+   "landmarks": {
+    "sole": [
+     0.0946,
+     -1.0279,
+     0.0461
+    ],
+    "toe": [
+     0.0946,
+     -0.9979,
+     0.239
+    ],
+    "heel": [
+     0.0946,
+     -0.9979,
+     -0.1468
+    ],
+    "top": [
+     0.0946,
+     -0.6697,
+     0.0461
+    ]
+   }
+  },
+  "leg_as_quiet_sting": {
+   "file": "leg_as_quiet_sting.glb",
+   "shape": "dagger",
+   "variant": 2,
+   "kind": "blade",
+   "guardY": -0.1792,
+   "grip": [
+    0,
+    0,
+    0
+   ],
+   "tip": [
+    0,
+    0.4248,
+    0
+   ],
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "faceNormal": [
+    0,
+    0,
+    1
+   ],
+   "edgeDir": [
+    1,
+    0,
+    0
+   ],
+   "lengthM": 0.45,
+   "sizeM": [
+    0.0976,
+    0.45,
+    0.0483
+   ],
+   "bboxM": {
+    "min": [
+     -0.0493,
+     -0.0252,
+     -0.0243
+    ],
+    "max": [
+     0.0482,
+     0.4248,
+     0.024
+    ]
+   },
+   "com": [
+    -0.0005,
+    0.1841,
+    0.0001
+   ],
+   "tris": 3764,
+   "verts": 2937,
+   "texPx": 512,
+   "kb": 105,
+   "hands": 1,
+   "slot": "mainHand"
+  },
+  "leg_be_boar_tusk": {
+   "file": "leg_be_boar_tusk.glb",
+   "shape": "axe",
+   "variant": 2,
+   "kind": "blade",
+   "grip": [
+    0,
+    0,
+    0
+   ],
+   "tip": [
+    0,
+    0.546,
+    0
+   ],
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "faceNormal": [
+    0,
+    0,
+    1
+   ],
+   "edgeDir": [
+    1,
+    0,
+    0
+   ],
+   "lengthM": 0.7,
+   "sizeM": [
+    0.2538,
+    0.7,
+    0.0792
+   ],
+   "bboxM": {
+    "min": [
+     -0.1392,
+     -0.154,
+     -0.0404
+    ],
+    "max": [
+     0.1146,
+     0.546,
+     0.0388
+    ]
+   },
+   "com": [
+    -0.0062,
+    0.3058,
+    -0.0007
+   ],
+   "tris": 4316,
+   "verts": 3729,
+   "texPx": 512,
+   "kb": 125,
+   "hands": 1,
+   "slot": "mainHand"
+  },
+  "leg_ma_archivist_hat": {
+   "file": "leg_ma_archivist_hat.glb",
+   "shape": "hat_pointed",
+   "variant": 1,
+   "kind": "head",
+   "mount": [
+    0,
+    0,
+    0
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ],
+   "forward": [
+    0,
+    0,
+    1
+   ],
+   "baseWidthM": 0.3496,
+   "baseDepthM": 0.4592,
+   "lengthM": 0.3805,
+   "sizeM": [
+    0.46,
+    0.3805,
+    0.4592
+   ],
+   "bboxM": {
+    "min": [
+     -0.2852,
+     -0.0057,
+     -0.2296
+    ],
+    "max": [
+     0.1748,
+     0.3748,
+     0.2296
+    ]
+   },
+   "com": [
+    -0.05,
+    0.1044,
+    0.0008
+   ],
+   "tris": 7000,
+   "verts": 5064,
+   "texPx": 1024,
+   "kb": 181,
+   "slot": "head"
+  },
+  "leg_ma_hen_leg_staff": {
+   "file": "leg_ma_hen_leg_staff.glb",
+   "shape": "staff",
+   "variant": 2,
+   "kind": "blade",
+   "grip": [
+    0,
+    0,
+    0
+   ],
+   "grip2": [
+    0.0139,
+    0.3,
+    -0.0008
+   ],
+   "tip": [
+    0,
+    0.986,
+    0
+   ],
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "faceNormal": [
+    0,
+    0,
+    1
+   ],
+   "edgeDir": [
+    1,
+    0,
+    0
+   ],
+   "lengthM": 1.7,
+   "sizeM": [
+    0.4803,
+    1.7,
+    0.2602
+   ],
+   "bboxM": {
+    "min": [
+     -0.1948,
+     -0.714,
+     -0.1239
+    ],
+    "max": [
+     0.2856,
+     0.986,
+     0.1363
+    ]
+   },
+   "com": [
+    0.0053,
+    0.4207,
+    0.0052
+   ],
+   "tris": 4114,
+   "verts": 3982,
+   "texPx": 512,
+   "kb": 138,
+   "hands": 2,
+   "slot": "mainHand"
+  },
+  "leg_wa_first_warden_blade": {
+   "file": "leg_wa_first_warden_blade.glb",
+   "shape": "sword",
+   "variant": 3,
+   "kind": "blade",
+   "guardY": -0.2705,
+   "grip": [
+    0,
+    0,
+    0
+   ],
+   "tip": [
+    0,
+    0.885,
+    0
+   ],
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "faceNormal": [
+    0,
+    0,
+    1
+   ],
+   "edgeDir": [
+    1,
+    0,
+    0
+   ],
+   "lengthM": 1,
+   "sizeM": [
+    0.2635,
+    1,
+    0.0857
+   ],
+   "bboxM": {
+    "min": [
+     -0.1314,
+     -0.115,
+     -0.0433
+    ],
+    "max": [
+     0.1321,
+     0.885,
+     0.0425
+    ]
+   },
+   "com": [
+    0.0002,
+    0.3665,
+    -0.0006
+   ],
+   "tris": 3466,
+   "verts": 2943,
+   "texPx": 512,
+   "kb": 112,
+   "hands": 1,
+   "slot": "mainHand"
+  },
+  "leg_wa_turtle_aegis": {
+   "file": "leg_wa_turtle_aegis.glb",
+   "shape": "round_shield",
+   "variant": 2,
+   "kind": "shield",
+   "mount": [
+    0,
+    0,
+    0
+   ],
+   "grip": [
+    0,
+    0,
+    0
+   ],
+   "faceNormal": [
+    0,
+    0,
+    1
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ],
+   "lengthM": 0.7611,
+   "sizeM": [
+    0.7,
+    0.7611,
+    0.2456
+   ],
+   "bboxM": {
+    "min": [
+     -0.35,
+     -0.3806,
+     -0.135
+    ],
+    "max": [
+     0.35,
+     0.3806,
+     0.1106
+    ]
+   },
+   "com": [
+    0.0033,
+    0.0247,
+    -0.0247
+   ],
+   "tris": 4346,
+   "verts": 3315,
+   "texPx": 1024,
+   "kb": 147,
+   "slot": "offHand"
+  },
+  "mage_f_belt": {
+   "file": "mage_f_belt.glb",
+   "shape": "belt_band",
+   "variant": 3,
+   "kind": "garment",
+   "slot": "belt",
+   "frame": "body",
+   "side": "both",
+   "garment": {
+    "body": "f",
+    "layer": 0.024
+   },
+   "lengthM": 0.2596,
+   "sizeM": [
+    0.4298,
+    0.2596,
+    0.31
+   ],
+   "bboxM": {
+    "min": [
+     -0.215,
+     -0.13,
+     -0.155
+    ],
+    "max": [
+     0.2148,
+     0.1296,
+     0.155
+    ]
+   },
+   "com": [
+    0.0046,
+    0.026,
+    0.006
+   ],
+   "tris": 8000,
+   "verts": 10300,
+   "texPx": 1024,
+   "kb": 299
+  },
+  "mage_f_boots": {
+   "file": "mage_f_boots.glb",
+   "shape": "boot_cuffs",
+   "variant": 3,
+   "kind": "garment",
+   "slot": "boots",
+   "frame": "body",
+   "side": "both",
+   "garment": {
+    "body": "f",
+    "layer": 0.013,
+    "legs": true
+   },
+   "lengthM": 0.5006,
+   "sizeM": [
+    0.3076,
+    0.5006,
+    0.47
+   ],
+   "bboxM": {
+    "min": [
+     -0.1528,
+     -1.0608,
+     -0.17
+    ],
+    "max": [
+     0.1547,
+     -0.5602,
+     0.3
+    ]
+   },
+   "com": [
+    0,
+    -0.8309,
+    0.0068
+   ],
+   "tris": 10000,
+   "verts": 12043,
+   "texPx": 1024,
+   "kb": 327
+  },
+  "mage_f_cloak": {
+   "file": "mage_f_cloak.glb",
+   "shape": "cloak_short",
+   "variant": 3,
+   "kind": "garment",
+   "slot": "cloak",
+   "frame": "body",
+   "side": "both",
+   "garment": {
+    "body": "f",
+    "layer": 0.026,
+    "sway": 1
+   },
+   "lengthM": 0.7399,
+   "sizeM": [
+    0.6796,
+    0.7399,
+    0.47
+   ],
+   "bboxM": {
+    "min": [
+     -0.3397,
+     -0.2,
+     -0.28
+    ],
+    "max": [
+     0.34,
+     0.5399,
+     0.19
+    ]
+   },
+   "com": [
+    -0.0001,
+    0.1309,
+    -0.0448
+   ],
+   "tris": 10000,
+   "verts": 10562,
+   "texPx": 1024,
+   "kb": 318
+  },
+  "mage_f_gloves": {
+   "file": "mage_f_gloves.glb",
+   "shape": "fingerless",
+   "variant": 3,
+   "kind": "garment",
+   "slot": "gloves",
+   "frame": "body",
+   "side": "both",
+   "garment": {
+    "body": "f",
+    "layer": 0.014
+   },
+   "lengthM": 0.11,
+   "sizeM": [
+    1.6397,
+    0.11,
+    0.1199
+   ],
+   "bboxM": {
+    "min": [
+     -0.8198,
+     0.315,
+     -0.0699
+    ],
+    "max": [
+     0.8198,
+     0.425,
+     0.05
+    ]
+   },
+   "com": [
+    0.0012,
+    0.3681,
+    -0.0227
+   ],
+   "tris": 6000,
+   "verts": 10009,
+   "texPx": 1024,
+   "kb": 266
+  },
+  "mage_f_robe": {
+   "file": "mage_f_robe.glb",
+   "shape": "robe",
+   "variant": 3,
+   "kind": "garment",
+   "slot": "chest",
+   "frame": "body",
+   "side": "both",
+   "garment": {
+    "body": "f",
+    "layer": 0.016,
+    "skirt": true,
+    "sleeve": 0.3,
+    "knee": 1,
+    "lining": true
+   },
+   "lengthM": 1.3295,
+   "sizeM": [
+    1.7182,
+    1.3295,
+    0.5243
+   ],
+   "bboxM": {
+    "min": [
+     -0.8587,
+     -0.819,
+     -0.2649
+    ],
+    "max": [
+     0.8595,
+     0.5105,
+     0.2594
+    ]
+   },
+   "com": [
+    -0.001,
+    -0.1604,
+    0.0482
+   ],
+   "tris": 15000,
+   "verts": 17278,
+   "texPx": 1024,
+   "kb": 476
+  },
+  "mage_f_shirt": {
+   "file": "mage_f_shirt.glb",
+   "shape": "shirt",
+   "variant": 3,
+   "kind": "garment",
+   "slot": "shirt",
+   "frame": "body",
+   "side": "both",
+   "garment": {
+    "body": "f",
+    "layer": 0.006,
+    "sleeve": 0.2
+   },
+   "lengthM": 0.54,
+   "sizeM": [
+    1.2867,
+    0.54,
+    0.2475
+   ],
+   "bboxM": {
+    "min": [
+     -0.6432,
+     -0.0557,
+     -0.1233
+    ],
+    "max": [
+     0.6434,
+     0.4843,
+     0.1242
+    ]
+   },
+   "com": [
+    -0.0026,
+    0.2374,
+    -0.0073
+   ],
+   "tris": 9000,
+   "verts": 6207,
+   "texPx": 1024,
+   "kb": 208
+  },
+  "mage_f_trousers": {
+   "file": "mage_f_trousers.glb",
+   "shape": "trousers",
+   "variant": 3,
+   "kind": "garment",
+   "slot": "legs",
+   "frame": "body",
+   "side": "both",
+   "garment": {
+    "body": "f",
+    "layer": 0.011,
+    "legs": true
+   },
+   "lengthM": 0.9299,
+   "sizeM": [
+    0.3887,
+    0.9299,
+    0.272
+   ],
+   "bboxM": {
+    "min": [
+     -0.1947,
+     -0.9,
+     -0.1296
+    ],
+    "max": [
+     0.194,
+     0.0299,
+     0.1424
+    ]
+   },
+   "com": [
+    -0.0001,
+    -0.4518,
+    0.0044
+   ],
+   "tris": 9000,
+   "verts": 7525,
+   "texPx": 1024,
+   "kb": 215
+  },
+  "mage_m_belt": {
+   "file": "mage_m_belt.glb",
+   "shape": "belt_band",
+   "variant": 3,
+   "kind": "garment",
+   "slot": "belt",
+   "frame": "body",
+   "side": "both",
+   "garment": {
+    "body": "m",
+    "layer": 0.024
+   },
+   "lengthM": 0.2098,
+   "sizeM": [
+    0.42,
+    0.2098,
+    0.3
+   ],
+   "bboxM": {
+    "min": [
+     -0.21,
+     -0.1348,
+     -0.15
+    ],
+    "max": [
+     0.21,
+     0.075,
+     0.15
+    ]
+   },
+   "com": [
+    -0.0105,
+    0.0091,
+    0.0044
+   ],
+   "tris": 8000,
+   "verts": 10571,
+   "texPx": 1024,
+   "kb": 323
+  },
+  "mage_m_boots": {
+   "file": "mage_m_boots.glb",
+   "shape": "boot_cuffs",
+   "variant": 3,
+   "kind": "garment",
+   "slot": "boots",
+   "frame": "body",
+   "side": "both",
+   "garment": {
+    "body": "m",
+    "layer": 0.013,
+    "legs": true
+   },
+   "lengthM": 0.4599,
+   "sizeM": [
+    0.3029,
+    0.4599,
+    0.48
+   ],
+   "bboxM": {
+    "min": [
+     -0.1519,
+     -1.0279,
+     -0.18
+    ],
+    "max": [
+     0.151,
+     -0.5681,
+     0.3
+    ]
+   },
+   "com": [
+    0,
+    -0.8241,
+    0.0005
+   ],
+   "tris": 9998,
+   "verts": 11483,
+   "texPx": 1024,
+   "kb": 310
+  },
+  "mage_m_cloak": {
+   "file": "mage_m_cloak.glb",
+   "shape": "cloak_short",
+   "variant": 3,
+   "kind": "garment",
+   "slot": "cloak",
+   "frame": "body",
+   "side": "both",
+   "garment": {
+    "body": "m",
+    "layer": 0.026,
+    "sway": 0.8
+   },
+   "lengthM": 0.2999,
+   "sizeM": [
+    0.62,
+    0.2999,
+    0.35
+   ],
+   "bboxM": {
+    "min": [
+     -0.31,
+     0.22,
+     -0.19
+    ],
+    "max": [
+     0.31,
+     0.5199,
+     0.16
+    ]
+   },
+   "com": [
+    0.005,
+    0.3735,
+    -0.0131
+   ],
+   "tris": 8998,
+   "verts": 9419,
+   "texPx": 1024,
+   "kb": 262
+  },
+  "mage_m_coat": {
+   "file": "mage_m_coat.glb",
+   "shape": "robe",
+   "variant": 3,
+   "kind": "garment",
+   "slot": "chest",
+   "frame": "body",
+   "side": "both",
+   "garment": {
+    "body": "m",
+    "layer": 0.014,
+    "skirt": true,
+    "sleeve": 0.3,
+    "knee": 1
+   },
+   "lengthM": 1.25,
+   "sizeM": [
+    1.2359,
+    1.25,
+    0.4263
+   ],
+   "bboxM": {
+    "min": [
+     -0.6183,
+     -0.7072,
+     -0.2086
+    ],
+    "max": [
+     0.6176,
+     0.5428,
+     0.2177
+    ]
+   },
+   "com": [
+    0.0005,
+    -0.039,
+    0.0003
+   ],
+   "tris": 14000,
+   "verts": 10981,
+   "texPx": 1024,
+   "kb": 342
+  },
+  "mage_m_gloves": {
+   "file": "mage_m_gloves.glb",
+   "shape": "fingerless",
+   "variant": 3,
+   "kind": "garment",
+   "slot": "gloves",
+   "frame": "body",
+   "side": "both",
+   "garment": {
+    "body": "m",
+    "layer": 0.014
+   },
+   "lengthM": 0.1093,
+   "sizeM": [
+    1.6599,
+    0.1093,
+    0.1198
+   ],
+   "bboxM": {
+    "min": [
+     -0.83,
+     0.3174,
+     -0.1049
+    ],
+    "max": [
+     0.83,
+     0.4267,
+     0.0149
+    ]
+   },
+   "com": [
+    -0.0019,
+    0.3728,
+    -0.0487
+   ],
+   "tris": 6000,
+   "verts": 8765,
+   "texPx": 1024,
+   "kb": 236
+  },
+  "mage_m_shirt": {
+   "file": "mage_m_shirt.glb",
+   "shape": "shirt",
+   "variant": 3,
+   "kind": "garment",
+   "slot": "shirt",
+   "frame": "body",
+   "side": "both",
+   "garment": {
+    "body": "m",
+    "layer": 0.006,
+    "sleeve": 0.2
+   },
+   "lengthM": 0.6897,
+   "sizeM": [
+    1.113,
+    0.6897,
+    0.3161
+   ],
+   "bboxM": {
+    "min": [
+     -0.5568,
+     -0.1628,
+     -0.1827
+    ],
+    "max": [
+     0.5562,
+     0.5269,
+     0.1334
+    ]
+   },
+   "com": [
+    -0.0002,
+    0.2399,
+    -0.0308
+   ],
+   "tris": 10998,
+   "verts": 8939,
+   "texPx": 1024,
+   "kb": 290
+  },
+  "mage_m_trousers": {
+   "file": "mage_m_trousers.glb",
+   "shape": "trousers",
+   "variant": 3,
+   "kind": "garment",
+   "slot": "legs",
+   "frame": "body",
+   "side": "both",
+   "garment": {
+    "body": "m",
+    "layer": 0.011,
+    "legs": true
+   },
+   "lengthM": 0.93,
+   "sizeM": [
+    0.3697,
+    0.93,
+    0.3148
+   ],
+   "bboxM": {
+    "min": [
+     -0.1845,
+     -0.88,
+     -0.1468
+    ],
+    "max": [
+     0.1852,
+     0.05,
+     0.168
+    ]
+   },
+   "com": [
+    0,
+    -0.4402,
+    -0.0021
+   ],
+   "tris": 8998,
+   "verts": 6418,
+   "texPx": 1024,
+   "kb": 194
+  },
+  "marsh_stalker_dagger": {
+   "file": "marsh_stalker_dagger.glb",
+   "shape": "dagger",
+   "variant": 2,
+   "kind": "blade",
+   "guardY": -0.0636,
+   "grip": [
+    0,
+    0,
+    0
+   ],
+   "tip": [
+    0,
+    0.3614,
+    0
+   ],
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "faceNormal": [
+    0,
+    0,
+    1
+   ],
+   "edgeDir": [
+    1,
+    0,
+    0
+   ],
+   "lengthM": 0.4499,
+   "sizeM": [
+    0.1048,
+    0.4499,
+    0.0572
+   ],
+   "bboxM": {
+    "min": [
+     -0.0388,
+     -0.0885,
+     -0.0284
+    ],
+    "max": [
+     0.066,
+     0.3614,
+     0.0289
+    ]
+   },
+   "com": [
+    0.0149,
+    0.0972,
+    0.0004
+   ],
+   "tris": 4500,
+   "verts": 5006,
+   "texPx": 512,
+   "kb": 153,
+   "hands": 1,
+   "slot": "mainHand"
+  },
+  "marsh_stalker_dagger_off": {
+   "file": "marsh_stalker_dagger_off.glb",
+   "shape": "dagger",
+   "variant": 2,
+   "kind": "blade",
+   "guardY": -0.0849,
+   "grip": [
+    0,
+    0,
+    0
+   ],
+   "tip": [
+    0,
+    0.3733,
+    0
+   ],
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "faceNormal": [
+    0,
+    0,
+    1
+   ],
+   "edgeDir": [
+    1,
+    0,
+    0
+   ],
+   "lengthM": 0.45,
+   "sizeM": [
+    0.1386,
+    0.45,
+    0.0808
+   ],
+   "bboxM": {
+    "min": [
+     -0.0692,
+     -0.0767,
+     -0.0401
+    ],
+    "max": [
+     0.0694,
+     0.3733,
+     0.0407
+    ]
+   },
+   "com": [
+    0.0001,
+    0.1061,
+    0.0005
+   ],
+   "tris": 4744,
+   "verts": 4006,
+   "texPx": 512,
+   "kb": 137,
+   "hands": 1,
+   "slot": "offHand"
+  },
+  "marsh_witch_hat": {
+   "file": "marsh_witch_hat.glb",
+   "shape": "hat_wide",
+   "variant": 1,
+   "kind": "head",
+   "mount": [
+    0,
+    0,
+    0
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ],
+   "forward": [
+    0,
+    0,
+    1
+   ],
+   "baseWidthM": 0.2746,
+   "baseDepthM": 0.0224,
+   "lengthM": 0.4297,
+   "sizeM": [
+    0.56,
+    0.4297,
+    0.5448
+   ],
+   "bboxM": {
+    "min": [
+     -0.4166,
+     -0.0199,
+     -0.2789
+    ],
+    "max": [
+     0.1434,
+     0.4098,
+     0.2659
+    ]
+   },
+   "com": [
+    -0.1268,
+    0.1661,
+    -0.0115
+   ],
+   "tris": 7475,
+   "verts": 8276,
+   "texPx": 1024,
+   "kb": 257,
+   "slot": "head"
+  },
+  "marsh_witch_staff": {
+   "file": "marsh_witch_staff.glb",
+   "shape": "staff",
+   "variant": 2,
+   "kind": "blade",
+   "grip": [
+    0,
+    0,
+    0
+   ],
+   "grip2": [
+    -0.0191,
+    0.3,
+    -0.011
+   ],
+   "tip": [
+    0,
+    0.986,
+    0
+   ],
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "faceNormal": [
+    0,
+    0,
+    1
+   ],
+   "edgeDir": [
+    1,
+    0,
+    0
+   ],
+   "lengthM": 1.7,
+   "sizeM": [
+    0.4345,
+    1.7,
+    0.4348
+   ],
+   "bboxM": {
+    "min": [
+     -0.2422,
+     -0.714,
+     -0.2292
+    ],
+    "max": [
+     0.1923,
+     0.986,
+     0.2056
+    ]
+   },
+   "com": [
+    -0.0209,
+    0.4476,
+    -0.0084
+   ],
+   "tris": 5000,
+   "verts": 8195,
+   "texPx": 512,
+   "kb": 219,
+   "hands": 2,
+   "slot": "mainHand"
+  },
+  "marsh_witch_tome": {
+   "file": "marsh_witch_tome.glb",
+   "shape": "tome",
+   "variant": 1,
+   "kind": "book",
+   "mount": [
+    0,
+    0,
+    0
+   ],
+   "grip": [
+    0,
+    0,
+    0
+   ],
+   "faceNormal": [
+    0,
+    0,
+    1
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ],
+   "lengthM": 0.2997,
+   "sizeM": [
+    0.2155,
+    0.2997,
+    0.1089
+   ],
+   "bboxM": {
+    "min": [
+     -0.1077,
+     -0.1498,
+     0
+    ],
+    "max": [
+     0.1079,
+     0.15,
+     0.1089
+    ]
+   },
+   "com": [
+    0.0004,
+    0.0155,
+    0.0541
+   ],
+   "tris": 4998,
+   "verts": 6666,
+   "texPx": 512,
+   "kb": 182,
+   "slot": "offHand"
+  },
+  "marsh_witch_wand": {
+   "file": "marsh_witch_wand.glb",
+   "shape": "wand",
+   "variant": 2,
+   "kind": "blade",
+   "grip": [
+    0,
+    0,
+    0
+   ],
+   "tip": [
+    0,
+    0.344,
+    0
+   ],
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "faceNormal": [
+    0,
+    0,
+    1
+   ],
+   "edgeDir": [
+    1,
+    0,
+    0
+   ],
+   "lengthM": 0.4,
+   "sizeM": [
+    0.1403,
+    0.4,
+    0.0603
+   ],
+   "bboxM": {
+    "min": [
+     -0.1073,
+     -0.056,
+     -0.0306
+    ],
+    "max": [
+     0.033,
+     0.344,
+     0.0297
+    ]
+   },
+   "com": [
+    -0.0262,
+    0.1987,
+    -0.0002
+   ],
+   "tris": 3000,
+   "verts": 4132,
+   "texPx": 512,
+   "kb": 129,
+   "hands": 1,
+   "slot": "mainHand"
+  },
+  "militia_cap": {
+   "file": "militia_cap.glb",
+   "shape": "cap",
+   "variant": 1,
+   "kind": "head",
+   "mount": [
+    0,
+    0,
+    0
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ],
+   "forward": [
+    0,
+    0,
+    1
+   ],
+   "baseWidthM": 0.255,
+   "baseDepthM": 0.2626,
+   "lengthM": 0.2876,
+   "sizeM": [
+    0.2563,
+    0.2876,
+    0.2797
+   ],
+   "bboxM": {
+    "min": [
+     -0.1279,
+     0,
+     -0.1323
+    ],
+    "max": [
+     0.1284,
+     0.2876,
+     0.1475
+    ]
+   },
+   "com": [
+    -0.0004,
+    0.14,
+    0.004
+   ],
+   "tris": 6000,
+   "verts": 6109,
+   "texPx": 512,
+   "kb": 175,
+   "slot": "head"
+  },
+  "moon_seer_circlet": {
+   "file": "moon_seer_circlet.glb",
+   "shape": "circlet",
+   "variant": 0,
+   "kind": "head",
+   "mount": [
+    0,
+    0,
+    0
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ],
+   "forward": [
+    0,
+    0,
+    1
+   ],
+   "baseWidthM": 0.1962,
+   "baseDepthM": 0.1708,
+   "lengthM": 0.0401,
+   "sizeM": [
+    0.2,
+    0.0401,
+    0.1755
+   ],
+   "bboxM": {
+    "min": [
+     -0.1017,
+     -0.0126,
+     -0.0877
+    ],
+    "max": [
+     0.0983,
+     0.0274,
+     0.0878
+    ]
+   },
+   "com": [
+    -0.0045,
+    0.0041,
+    0
+   ],
+   "tris": 5000,
+   "verts": 4425,
+   "texPx": 512,
+   "kb": 133,
+   "slot": "head"
+  },
+  "moon_seer_staff": {
+   "file": "moon_seer_staff.glb",
+   "shape": "staff",
+   "variant": 4,
+   "kind": "blade",
+   "grip": [
+    0,
+    0,
+    0
+   ],
+   "grip2": [
+    0,
+    0.3,
+    0.0056
+   ],
+   "tip": [
+    0,
+    0.986,
+    0
+   ],
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "faceNormal": [
+    0,
+    0,
+    1
+   ],
+   "edgeDir": [
+    1,
+    0,
+    0
+   ],
+   "lengthM": 1.7,
+   "sizeM": [
+    0.406,
+    1.7,
+    0.2257
+   ],
+   "bboxM": {
+    "min": [
+     -0.203,
+     -0.714,
+     -0.1137
+    ],
+    "max": [
+     0.2031,
+     0.986,
+     0.112
+    ]
+   },
+   "com": [
+    0.0002,
+    0.4673,
+    -0.0009
+   ],
+   "tris": 3846,
+   "verts": 3286,
+   "texPx": 512,
+   "kb": 114,
+   "hands": 2,
+   "slot": "mainHand"
+  },
+  "moon_seer_tome": {
+   "file": "moon_seer_tome.glb",
+   "shape": "tome",
+   "variant": 3,
+   "kind": "book",
+   "mount": [
+    0,
+    0,
+    0
+   ],
+   "grip": [
+    0,
+    0,
+    0
+   ],
+   "faceNormal": [
+    0,
+    0,
+    1
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ],
+   "lengthM": 0.3,
+   "sizeM": [
+    0.2664,
+    0.3,
+    0.1923
+   ],
+   "bboxM": {
+    "min": [
+     -0.1331,
+     -0.15,
+     -0.0273
+    ],
+    "max": [
+     0.1333,
+     0.15,
+     0.165
+    ]
+   },
+   "com": [
+    0.0003,
+    -0.0107,
+    0.0677
+   ],
+   "tris": 5000,
+   "verts": 6889,
+   "texPx": 512,
+   "kb": 202,
+   "slot": "offHand"
+  },
+  "moon_seer_wand": {
+   "file": "moon_seer_wand.glb",
+   "shape": "wand",
+   "variant": 4,
+   "kind": "blade",
+   "grip": [
+    0,
+    0,
+    0
+   ],
+   "tip": [
+    0,
+    0.344,
+    0
+   ],
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "faceNormal": [
+    0,
+    0,
+    1
+   ],
+   "edgeDir": [
+    1,
+    0,
+    0
+   ],
+   "lengthM": 0.4,
+   "sizeM": [
+    0.0492,
+    0.4,
+    0.0939
+   ],
+   "bboxM": {
+    "min": [
+     -0.0246,
+     -0.056,
+     -0.0479
+    ],
+    "max": [
+     0.0246,
+     0.344,
+     0.046
+    ]
+   },
+   "com": [
+    0.0001,
+    0.2148,
+    0.0001
+   ],
+   "tris": 3000,
+   "verts": 2860,
+   "texPx": 512,
+   "kb": 108,
+   "hands": 1,
+   "slot": "mainHand"
+  },
+  "moon_stalker_dagger": {
+   "file": "moon_stalker_dagger.glb",
+   "shape": "dagger",
+   "variant": 3,
+   "kind": "blade",
+   "guardY": -0.1106,
+   "grip": [
+    0,
+    0,
+    0
+   ],
+   "tip": [
+    0,
+    0.3881,
+    0
+   ],
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "faceNormal": [
+    0,
+    0,
+    1
+   ],
+   "edgeDir": [
+    1,
+    0,
+    0
+   ],
+   "lengthM": 0.45,
+   "sizeM": [
+    0.1106,
+    0.45,
+    0.0429
+   ],
+   "bboxM": {
+    "min": [
+     -0.0546,
+     -0.0619,
+     -0.0215
+    ],
+    "max": [
+     0.056,
+     0.3881,
+     0.0214
+    ]
+   },
+   "com": [
+    0.0005,
+    0.1239,
+    -0.0001
+   ],
+   "tris": 3956,
+   "verts": 3224,
+   "texPx": 512,
+   "kb": 118,
+   "hands": 1,
+   "slot": "mainHand"
+  },
+  "moon_stalker_dagger_off": {
+   "file": "moon_stalker_dagger_off.glb",
+   "shape": "dagger",
+   "variant": 3,
+   "kind": "blade",
+   "guardY": -0.0789,
+   "grip": [
+    0,
+    0,
+    0
+   ],
+   "tip": [
+    0,
+    0.3693,
+    0
+   ],
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "faceNormal": [
+    0,
+    0,
+    1
+   ],
+   "edgeDir": [
+    1,
+    0,
+    0
+   ],
+   "lengthM": 0.45,
+   "sizeM": [
+    0.1508,
+    0.45,
+    0.0375
+   ],
+   "bboxM": {
+    "min": [
+     -0.0907,
+     -0.0807,
+     -0.0189
+    ],
+    "max": [
+     0.0601,
+     0.3693,
+     0.0186
+    ]
+   },
+   "com": [
+    -0.0011,
+    0.1351,
+    -0.0001
+   ],
+   "tris": 4587,
+   "verts": 3862,
+   "texPx": 512,
+   "kb": 130,
+   "hands": 1,
+   "slot": "offHand"
+  },
+  "moon_stalker_mask": {
+   "file": "moon_stalker_mask.glb",
+   "shape": "half_mask",
+   "variant": 1,
+   "kind": "face",
+   "mount": [
+    0,
+    0,
+    0
+   ],
+   "grip": [
+    0,
+    0,
+    0
+   ],
+   "faceNormal": [
+    0,
+    0,
+    1
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ],
+   "lengthM": 0.2277,
+   "sizeM": [
+    0.1882,
+    0.2277,
+    0.2553
+   ],
+   "bboxM": {
+    "min": [
+     -0.0943,
+     -0.1138,
+     0
+    ],
+    "max": [
+     0.0939,
+     0.1139,
+     0.2553
+    ]
+   },
+   "com": [
+    0.0024,
+    0.0014,
+    0.1196
+   ],
+   "tris": 4988,
+   "verts": 6622,
+   "texPx": 512,
+   "kb": 179,
+   "slot": "head"
+  },
+  "moon_warden_gauntlets": {
+   "file": "moon_warden_gauntlets.glb",
+   "shape": "gauntlets",
+   "variant": 0,
+   "kind": "hand",
+   "lengthM": 0.1901,
+   "sizeM": [
+    0.32,
+    0.1901,
+    0.1926
+   ],
+   "bboxM": {
+    "min": [
+     0.58,
+     0.279,
+     -0.1393
+    ],
+    "max": [
+     0.9,
+     0.469,
+     0.0533
+    ]
+   },
+   "com": [
+    0.725,
+    0.3716,
+    -0.0415
+   ],
+   "tris": 7000,
+   "verts": 7703,
+   "texPx": 512,
+   "kb": 210,
+   "slot": "gloves",
+   "frame": "body",
+   "side": "left",
+   "mirror": true,
+   "bones": [
+    "LeftHand",
+    "LeftForeArm"
+   ],
+   "landmarks": {
+    "cuff": [
+     0.58,
+     0.374,
+     -0.043
+    ],
+    "fingertips": [
+     0.9,
+     0.374,
+     -0.043
+    ]
+   }
+  },
+  "moon_warden_greatsword": {
+   "file": "moon_warden_greatsword.glb",
+   "shape": "greatsword",
+   "variant": 3,
+   "kind": "blade",
+   "guardY": -0.4234,
+   "grip": [
+    0,
+    0,
+    0
+   ],
+   "grip2": [
+    -0.0006,
+    0.157,
+    0.0032
+   ],
+   "tip": [
+    0,
+    1.4019,
+    0
+   ],
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "faceNormal": [
+    0,
+    0,
+    1
+   ],
+   "edgeDir": [
+    1,
+    0,
+    0
+   ],
+   "lengthM": 1.5,
+   "sizeM": [
+    0.4087,
+    1.5,
+    0.1085
+   ],
+   "bboxM": {
+    "min": [
+     -0.2063,
+     -0.0981,
+     -0.0533
+    ],
+    "max": [
+     0.2023,
+     1.4019,
+     0.0552
+    ]
+   },
+   "com": [
+    -0.0008,
+    0.6353,
+    0.0013
+   ],
+   "tris": 3746,
+   "verts": 3008,
+   "texPx": 512,
+   "kb": 112,
+   "hands": 2,
+   "slot": "mainHand"
+  },
+  "moon_warden_greaves": {
+   "file": "moon_warden_greaves.glb",
+   "shape": "greaves",
+   "variant": 0,
+   "kind": "foot",
+   "lengthM": 0.5519,
+   "sizeM": [
+    0.2447,
+    0.5519,
+    0.4252
+   ],
+   "bboxM": {
+    "min": [
+     -0.0285,
+     -1.028,
+     -0.1862
+    ],
+    "max": [
+     0.2162,
+     -0.4761,
+     0.239
+    ]
+   },
+   "com": [
+    0.093,
+    -0.749,
+    -0.0284
+   ],
+   "tris": 8000,
+   "verts": 8362,
+   "texPx": 1024,
+   "kb": 263,
+   "slot": "boots",
+   "frame": "body",
+   "side": "left",
+   "mirror": true,
+   "bones": [
+    "LeftFoot",
+    "LeftToeBase",
+    "LeftLeg"
+   ],
+   "landmarks": {
+    "sole": [
+     0.0939,
+     -1.028,
+     0.0264
+    ],
+    "toe": [
+     0.0939,
+     -0.998,
+     0.239
+    ],
+    "heel": [
+     0.0939,
+     -0.998,
+     -0.1862
+    ],
+    "top": [
+     0.0939,
+     -0.4761,
+     0.0264
+    ]
+   }
+  },
+  "moon_warden_helm": {
+   "file": "moon_warden_helm.glb",
+   "shape": "plume_helm",
+   "variant": 3,
+   "kind": "head",
+   "shellDepthM": 0.3934,
+   "mount": [
+    0,
+    0,
+    0
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ],
+   "forward": [
+    0,
+    0,
+    1
+   ],
+   "baseWidthM": 0.1874,
+   "baseDepthM": 0.3934,
+   "lengthM": 0.3556,
+   "sizeM": [
+    0.27,
+    0.3556,
+    0.4346
+   ],
+   "bboxM": {
+    "min": [
+     -0.1353,
+     -0.0267,
+     -0.1967
+    ],
+    "max": [
+     0.1347,
+     0.3289,
+     0.2379
+    ]
+   },
+   "com": [
+    -0.0002,
+    0.1424,
+    0.0371
+   ],
+   "tris": 7000,
+   "verts": 7858,
+   "texPx": 1024,
+   "kb": 242,
+   "slot": "head"
+  },
+  "moon_warden_plate": {
+   "file": "moon_warden_plate.glb",
+   "shape": "chest_plate",
+   "variant": 0,
+   "kind": "torso",
+   "lengthM": 0.5312,
+   "sizeM": [
+    0.6,
+    0.5312,
+    0.3381
+   ],
+   "bboxM": {
+    "min": [
+     -0.3,
+     -0.0012,
+     -0.1891
+    ],
+    "max": [
+     0.3,
+     0.53,
+     0.1491
+    ]
+   },
+   "com": [
+    0.0001,
+    0.2817,
+    -0.0275
+   ],
+   "tris": 7997,
+   "verts": 8948,
+   "texPx": 1024,
+   "kb": 286,
+   "slot": "chest",
+   "frame": "body",
+   "side": "both",
+   "bones": [
+    "Spine2",
+    "Spine1",
+    "Spine",
+    "LeftShoulder",
+    "RightShoulder",
+    "LeftArm",
+    "RightArm"
+   ],
+   "landmarks": {
+    "neck": [
+     0,
+     0.5,
+     -0.02
+    ],
+    "hem": [
+     0,
+     -0.0012,
+     -0.02
+    ],
+    "shoulderL": [
+     0.3,
+     0.43,
+     -0.02
+    ],
+    "shoulderR": [
+     -0.3,
+     0.43,
+     -0.02
+    ]
+   }
+  },
+  "moon_warden_shield": {
+   "file": "moon_warden_shield.glb",
+   "shape": "round_shield",
+   "variant": 4,
+   "kind": "shield",
+   "mount": [
+    0,
+    0,
+    0
+   ],
+   "grip": [
+    0,
+    0,
+    0
+   ],
+   "faceNormal": [
+    0,
+    0,
+    1
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ],
+   "lengthM": 0.7015,
+   "sizeM": [
+    0.7,
+    0.7015,
+    0.0963
+   ],
+   "bboxM": {
+    "min": [
+     -0.35,
+     -0.3507,
+     0
+    ],
+    "max": [
+     0.35,
+     0.3507,
+     0.0963
+    ]
+   },
+   "com": [
+    0.0007,
+    0,
+    0.0507
+   ],
+   "tris": 6452,
+   "verts": 4996,
+   "texPx": 1024,
+   "kb": 196,
+   "slot": "offHand"
+  },
+  "moon_warden_sword": {
+   "file": "moon_warden_sword.glb",
+   "shape": "sword",
+   "variant": 3,
+   "kind": "blade",
+   "guardY": -0.2822,
+   "grip": [
+    0,
+    0,
+    0
+   ],
+   "tip": [
+    0,
+    0.891,
+    0
+   ],
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "faceNormal": [
+    0,
+    0,
+    1
+   ],
+   "edgeDir": [
+    1,
+    0,
+    0
+   ],
+   "lengthM": 1,
+   "sizeM": [
+    0.2552,
+    1,
+    0.0726
+   ],
+   "bboxM": {
+    "min": [
+     -0.1272,
+     -0.109,
+     -0.0357
+    ],
+    "max": [
+     0.1281,
+     0.891,
+     0.0368
+    ]
+   },
+   "com": [
+    0.0002,
+    0.3611,
+    0.0002
+   ],
+   "tris": 3600,
+   "verts": 2827,
+   "texPx": 512,
+   "kb": 108,
+   "hands": 1,
+   "slot": "mainHand"
+  },
+  "moon_wolf_axe": {
+   "file": "moon_wolf_axe.glb",
+   "shape": "axe",
+   "variant": 4,
+   "kind": "blade",
+   "grip": [
+    0,
+    0,
+    0
+   ],
+   "tip": [
+    0,
+    0.546,
+    0
+   ],
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "faceNormal": [
+    0,
+    0,
+    1
+   ],
+   "edgeDir": [
+    1,
+    0,
+    0
+   ],
+   "lengthM": 0.7,
+   "sizeM": [
+    0.2459,
+    0.7,
+    0.0743
+   ],
+   "bboxM": {
+    "min": [
+     -0.1192,
+     -0.154,
+     -0.0361
+    ],
+    "max": [
+     0.1267,
+     0.546,
+     0.0382
+    ]
+   },
+   "com": [
+    0.0142,
+    0.3237,
+    0.0009
+   ],
+   "tris": 3614,
+   "verts": 3565,
+   "texPx": 512,
+   "kb": 127,
+   "hands": 1,
+   "slot": "mainHand"
+  },
+  "moon_wolf_axe_off": {
+   "file": "moon_wolf_axe_off.glb",
+   "shape": "axe",
+   "variant": 4,
+   "kind": "blade",
+   "grip": [
+    0,
+    0,
+    0
+   ],
+   "tip": [
+    0,
+    0.546,
+    0
+   ],
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "faceNormal": [
+    0,
+    0,
+    1
+   ],
+   "edgeDir": [
+    1,
+    0,
+    0
+   ],
+   "lengthM": 0.7,
+   "sizeM": [
+    0.2715,
+    0.7,
+    0.11
+   ],
+   "bboxM": {
+    "min": [
+     -0.1629,
+     -0.154,
+     -0.0549
+    ],
+    "max": [
+     0.1086,
+     0.546,
+     0.055
+    ]
+   },
+   "com": [
+    -0.0209,
+    0.3519,
+    0.0003
+   ],
+   "tris": 4390,
+   "verts": 4257,
+   "texPx": 512,
+   "kb": 143,
+   "hands": 1,
+   "slot": "offHand"
+  },
+  "moon_wolf_gauntlets": {
+   "file": "moon_wolf_gauntlets.glb",
+   "shape": "gauntlets",
+   "variant": 0,
+   "kind": "hand",
+   "lengthM": 0.1724,
+   "sizeM": [
+    0.32,
+    0.1724,
+    0.1518
+   ],
+   "bboxM": {
+    "min": [
+     0.58,
+     0.2877,
+     -0.1189
+    ],
+    "max": [
+     0.9,
+     0.4601,
+     0.0329
+    ]
+   },
+   "com": [
+    0.7089,
+    0.3702,
+    -0.0426
+   ],
+   "tris": 7000,
+   "verts": 8184,
+   "texPx": 512,
+   "kb": 229,
+   "slot": "gloves",
+   "frame": "body",
+   "side": "left",
+   "mirror": true,
+   "bones": [
+    "LeftHand",
+    "LeftForeArm"
+   ],
+   "landmarks": {
+    "cuff": [
+     0.58,
+     0.3739,
+     -0.043
+    ],
+    "fingertips": [
+     0.9,
+     0.3739,
+     -0.043
+    ]
+   }
+  },
+  "moon_wolf_greataxe": {
+   "file": "moon_wolf_greataxe.glb",
+   "shape": "greataxe",
+   "variant": 3,
+   "kind": "blade",
+   "grip": [
+    0,
+    0,
+    0
+   ],
+   "grip2": [
+    0.0008,
+    0.42,
+    -0.0017
+   ],
+   "tip": [
+    0,
+    1,
+    0
+   ],
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "faceNormal": [
+    0,
+    0,
+    1
+   ],
+   "edgeDir": [
+    -1,
+    0,
+    0
+   ],
+   "lengthM": 1.25,
+   "sizeM": [
+    0.4,
+    1.25,
+    0.0894
+   ],
+   "bboxM": {
+    "min": [
+     -0.1988,
+     -0.25,
+     -0.0455
+    ],
+    "max": [
+     0.2012,
+     1,
+     0.0439
+    ]
+   },
+   "com": [
+    0.0012,
+    0.5949,
+    0.0001
+   ],
+   "tris": 3366,
+   "verts": 3260,
+   "texPx": 512,
+   "kb": 116,
+   "hands": 2,
+   "slot": "mainHand"
+  },
+  "moon_wolf_plate": {
+   "file": "moon_wolf_plate.glb",
+   "shape": "chest_plate",
+   "variant": 0,
+   "kind": "torso",
+   "lengthM": 0.5123,
+   "sizeM": [
+    0.5998,
+    0.5123,
+    0.4656
+   ],
+   "bboxM": {
+    "min": [
+     -0.2998,
+     0.0177,
+     -0.2528
+    ],
+    "max": [
+     0.3,
+     0.53,
+     0.2128
+    ]
+   },
+   "com": [
+    0.0005,
+    0.3039,
+    -0.0453
+   ],
+   "tris": 8000,
+   "verts": 12076,
+   "texPx": 1024,
+   "kb": 352,
+   "slot": "chest",
+   "frame": "body",
+   "side": "both",
+   "bones": [
+    "Spine2",
+    "Spine1",
+    "Spine",
+    "LeftShoulder",
+    "RightShoulder",
+    "LeftArm",
+    "RightArm"
+   ],
+   "landmarks": {
+    "neck": [
+     0,
+     0.5,
+     -0.02
+    ],
+    "hem": [
+     0,
+     0.0177,
+     -0.02
+    ],
+    "shoulderL": [
+     0.3,
+     0.43,
+     -0.02
+    ],
+    "shoulderR": [
+     -0.2998,
+     0.43,
+     -0.02
+    ]
+   }
+  },
+  "north_axe_off": {
+   "file": "north_axe_off.glb",
+   "shape": "axe",
+   "variant": 1,
+   "kind": "blade",
+   "grip": [
+    0,
+    0,
+    0
+   ],
+   "tip": [
+    0,
+    0.546,
+    0
+   ],
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "faceNormal": [
+    0,
+    0,
+    1
+   ],
+   "edgeDir": [
+    -1,
+    0,
+    0
+   ],
+   "lengthM": 0.7,
+   "sizeM": [
+    0.356,
+    0.7,
+    0.1567
+   ],
+   "bboxM": {
+    "min": [
+     -0.1327,
+     -0.154,
+     -0.0762
+    ],
+    "max": [
+     0.2232,
+     0.546,
+     0.0804
+    ]
+   },
+   "com": [
+    0.037,
+    0.2705,
+    0.001
+   ],
+   "tris": 6000,
+   "verts": 5927,
+   "texPx": 512,
+   "kb": 180,
+   "hands": 1,
+   "slot": "offHand"
+  },
+  "rusty_dagger": {
+   "file": "rusty_dagger.glb",
+   "shape": "dagger",
+   "variant": 0,
+   "kind": "blade",
+   "guardY": -0.0873,
+   "grip": [
+    0,
+    0,
+    0
+   ],
+   "tip": [
+    0,
+    0.3743,
+    0
+   ],
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "faceNormal": [
+    0,
+    0,
+    1
+   ],
+   "edgeDir": [
+    1,
+    0,
+    0
+   ],
+   "lengthM": 0.45,
+   "sizeM": [
+    0.1261,
+    0.45,
+    0.0419
+   ],
+   "bboxM": {
+    "min": [
+     -0.0633,
+     -0.0757,
+     -0.0212
+    ],
+    "max": [
+     0.0628,
+     0.3743,
+     0.0206
+    ]
+   },
+   "com": [
+    -0.0002,
+    0.1165,
+    -0.0003
+   ],
+   "tris": 3364,
+   "verts": 2447,
+   "texPx": 512,
+   "kb": 88,
+   "hands": 1,
+   "slot": "mainHand"
+  },
+  "rusty_dagger_off": {
+   "file": "rusty_dagger.glb",
+   "shape": "dagger",
+   "variant": 0,
+   "kind": "blade",
+   "guardY": -0.0873,
+   "grip": [
+    0,
+    0,
+    0
+   ],
+   "tip": [
+    0,
+    0.3743,
+    0
+   ],
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "faceNormal": [
+    0,
+    0,
+    1
+   ],
+   "edgeDir": [
+    1,
+    0,
+    0
+   ],
+   "lengthM": 0.45,
+   "sizeM": [
+    0.1261,
+    0.45,
+    0.0419
+   ],
+   "bboxM": {
+    "min": [
+     -0.0633,
+     -0.0757,
+     -0.0212
+    ],
+    "max": [
+     0.0628,
+     0.3743,
+     0.0206
+    ]
+   },
+   "com": [
+    -0.0002,
+    0.1165,
+    -0.0003
+   ],
+   "tris": 3364,
+   "verts": 2447,
+   "texPx": 512,
+   "kb": 88,
+   "hands": 1,
+   "alias": "rusty_dagger",
+   "slot": "mainHand"
+  },
+  "seal_keeper_hat": {
+   "file": "seal_keeper_hat.glb",
+   "shape": "hat_pointed",
+   "variant": 2,
+   "kind": "head",
+   "mount": [
+    0,
+    0,
+    0
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ],
+   "forward": [
+    0,
+    0,
+    1
+   ],
+   "baseWidthM": 0.3105,
+   "baseDepthM": 0.1319,
+   "lengthM": 0.3817,
+   "sizeM": [
+    0.46,
+    0.3817,
+    0.4357
+   ],
+   "bboxM": {
+    "min": [
+     -0.2272,
+     -0.0057,
+     -0.0659
+    ],
+    "max": [
+     0.2328,
+     0.3759,
+     0.3698
+    ]
+   },
+   "com": [
+    0.0093,
+    0.1407,
+    0.1428
+   ],
+   "tris": 7000,
+   "verts": 7074,
+   "texPx": 1024,
+   "kb": 226,
+   "slot": "head"
+  },
+  "seal_keeper_orb": {
+   "file": "seal_keeper_orb.glb",
+   "shape": "orb",
+   "variant": 2,
+   "kind": "orb",
+   "grip": [
+    0,
+    0,
+    0
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ],
+   "lengthM": 0.1948,
+   "sizeM": [
+    0.1908,
+    0.1948,
+    0.2393
+   ],
+   "bboxM": {
+    "min": [
+     -0.0954,
+     -0.0977,
+     -0.1197
+    ],
+    "max": [
+     0.0954,
+     0.0971,
+     0.1196
+    ]
+   },
+   "com": [
+    -0.0006,
+    0.0012,
+    -0.0005
+   ],
+   "tris": 5000,
+   "verts": 7613,
+   "texPx": 512,
+   "kb": 214,
+   "slot": "offHand"
+  },
+  "seal_keeper_staff": {
+   "file": "seal_keeper_staff.glb",
+   "shape": "staff",
+   "variant": 3,
+   "kind": "blade",
+   "grip": [
+    0,
+    0,
+    0
+   ],
+   "grip2": [
+    0.0092,
+    0.3,
+    -0.0008
+   ],
+   "tip": [
+    0,
+    0.986,
+    0
+   ],
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "faceNormal": [
+    0,
+    0,
+    1
+   ],
+   "edgeDir": [
+    1,
+    0,
+    0
+   ],
+   "lengthM": 1.7,
+   "sizeM": [
+    0.3788,
+    1.7,
+    0.1155
+   ],
+   "bboxM": {
+    "min": [
+     -0.2182,
+     -0.714,
+     -0.0565
+    ],
+    "max": [
+     0.1606,
+     0.986,
+     0.059
+    ]
+   },
+   "com": [
+    -0.0098,
+    0.3467,
+    0.0026
+   ],
+   "tris": 3620,
+   "verts": 3549,
+   "texPx": 512,
+   "kb": 120,
+   "hands": 2,
+   "slot": "mainHand"
+  },
+  "seal_keeper_wand": {
+   "file": "seal_keeper_wand.glb",
+   "shape": "wand",
+   "variant": 3,
+   "kind": "blade",
+   "grip": [
+    0,
+    0,
+    0
+   ],
+   "tip": [
+    0,
+    0.344,
+    0
+   ],
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "faceNormal": [
+    0,
+    0,
+    1
+   ],
+   "edgeDir": [
+    1,
+    0,
+    0
+   ],
+   "lengthM": 0.4,
+   "sizeM": [
+    0.1359,
+    0.4,
+    0.0641
+   ],
+   "bboxM": {
+    "min": [
+     -0.058,
+     -0.056,
+     -0.031
+    ],
+    "max": [
+     0.0779,
+     0.344,
+     0.0331
+    ]
+   },
+   "com": [
+    0.0107,
+    0.1847,
+    0.0009
+   ],
+   "tris": 3000,
+   "verts": 4283,
+   "texPx": 512,
+   "kb": 135,
+   "hands": 1,
+   "slot": "mainHand"
+  },
+  "short_sword": {
+   "file": "short_sword.glb",
+   "shape": "sword",
+   "variant": 0,
+   "kind": "blade",
+   "guardY": -0.2069,
+   "grip": [
+    0,
+    0,
+    0
+   ],
+   "tip": [
+    0,
+    0.7785,
+    0
+   ],
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "faceNormal": [
+    0,
+    0,
+    1
+   ],
+   "edgeDir": [
+    1,
+    0,
+    0
+   ],
+   "lengthM": 0.9,
+   "sizeM": [
+    0.184,
+    0.9,
+    0.0633
+   ],
+   "bboxM": {
+    "min": [
+     -0.0922,
+     -0.1215,
+     -0.032
+    ],
+    "max": [
+     0.0918,
+     0.7785,
+     0.0313
+    ]
+   },
+   "com": [
+    0.0002,
+    0.303,
+    -0.0005
+   ],
+   "tris": 3516,
+   "verts": 3064,
+   "texPx": 512,
+   "kb": 105,
+   "hands": 1,
+   "slot": "mainHand"
+  },
+  "warrior_f_belt": {
+   "file": "warrior_f_belt.glb",
+   "shape": "belt_band",
+   "variant": 0,
+   "kind": "garment",
+   "slot": "belt",
+   "frame": "body",
+   "side": "both",
+   "garment": {
+    "body": "f",
+    "layer": 0.024
+   },
+   "lengthM": 0.27,
+   "sizeM": [
+    0.43,
+    0.27,
+    0.26
+   ],
+   "bboxM": {
+    "min": [
+     -0.215,
+     -0.2,
+     -0.13
+    ],
+    "max": [
+     0.215,
+     0.07,
+     0.13
+    ]
+   },
+   "com": [
+    -0.0107,
+    0.0028,
+    0.0091
+   ],
+   "tris": 5996,
+   "verts": 5901,
+   "texPx": 1024,
+   "kb": 177
+  },
+  "warrior_f_cuirass": {
+   "file": "warrior_f_cuirass.glb",
+   "shape": "chest_plate",
+   "variant": 0,
+   "kind": "garment",
+   "slot": "chest",
+   "frame": "body",
+   "side": "both",
+   "garment": {
+    "body": "f",
+    "layer": 0.016,
+    "skirt": true
+   },
+   "lengthM": 0.8199,
+   "sizeM": [
+    0.68,
+    0.8199,
+    0.3699
+   ],
+   "bboxM": {
+    "min": [
+     -0.3399,
+     -0.32,
+     -0.1858
+    ],
+    "max": [
+     0.3401,
+     0.4999,
+     0.1841
+    ]
+   },
+   "com": [
+    0.0006,
+    0.1089,
+    -0.0196
+   ],
+   "tris": 13990,
+   "verts": 14785,
+   "texPx": 1024,
+   "kb": 413
+  },
+  "warrior_f_gauntlets": {
+   "file": "warrior_f_gauntlets.glb",
+   "shape": "gauntlets",
+   "variant": 0,
+   "kind": "garment",
+   "slot": "gloves",
+   "frame": "body",
+   "side": "both",
+   "garment": {
+    "body": "f",
+    "layer": 0.014
+   },
+   "lengthM": 0.0885,
+   "sizeM": [
+    1.7598,
+    0.0885,
+    0.1071
+   ],
+   "bboxM": {
+    "min": [
+     -0.8798,
+     0.3308,
+     -0.0636
+    ],
+    "max": [
+     0.88,
+     0.4192,
+     0.0435
+    ]
+   },
+   "com": [
+    0.0004,
+    0.3677,
+    -0.0067
+   ],
+   "tris": 8998,
+   "verts": 10548,
+   "texPx": 1024,
+   "kb": 296
+  },
+  "warrior_f_greaves": {
+   "file": "warrior_f_greaves.glb",
+   "shape": "greaves",
+   "variant": 0,
+   "kind": "garment",
+   "slot": "boots",
+   "frame": "body",
+   "side": "both",
+   "garment": {
+    "body": "f",
+    "layer": 0.013,
+    "legs": true
+   },
+   "lengthM": 0.6808,
+   "sizeM": [
+    0.3555,
+    0.6808,
+    0.36
+   ],
+   "bboxM": {
+    "min": [
+     -0.1776,
+     -1.0608,
+     -0.13
+    ],
+    "max": [
+     0.1779,
+     -0.38,
+     0.23
+    ]
+   },
+   "com": [
+    0,
+    -0.7524,
+    0.0154
+   ],
+   "tris": 11996,
+   "verts": 11531,
+   "texPx": 1024,
+   "kb": 331
+  },
+  "warrior_f_undershirt": {
+   "file": "warrior_f_undershirt.glb",
+   "shape": "shirt",
+   "variant": 1,
+   "kind": "garment",
+   "slot": "shirt",
+   "frame": "body",
+   "side": "both",
+   "garment": {
+    "body": "f",
+    "layer": 0.006,
+    "sleeve": 0.2
+   },
+   "lengthM": 0.5798,
+   "sizeM": [
+    1.457,
+    0.5798,
+    0.2611
+   ],
+   "bboxM": {
+    "min": [
+     -0.7282,
+     -0.0769,
+     -0.1287
+    ],
+    "max": [
+     0.7288,
+     0.5029,
+     0.1324
+    ]
+   },
+   "com": [
+    0.0001,
+    0.2323,
+    -0.006
+   ],
+   "tris": 13990,
+   "verts": 11332,
+   "texPx": 1024,
+   "kb": 336
+  },
+  "warrior_m_boots": {
+   "file": "warrior_m_boots.glb",
+   "shape": "boot_cuffs",
+   "variant": 0,
+   "kind": "garment",
+   "slot": "boots",
+   "frame": "body",
+   "side": "both",
+   "garment": {
+    "body": "m",
+    "layer": 0.013,
+    "legs": true
+   },
+   "lengthM": 0.458,
+   "sizeM": [
+    0.3098,
+    0.458,
+    0.3997
+   ],
+   "bboxM": {
+    "min": [
+     -0.1549,
+     -1.028,
+     -0.1299
+    ],
+    "max": [
+     0.1549,
+     -0.57,
+     0.2698
+    ]
+   },
+   "com": [
+    0,
+    -0.8012,
+    0.0178
+   ],
+   "tris": 9994,
+   "verts": 7175,
+   "texPx": 1024,
+   "kb": 225
+  },
+  "warrior_m_bracers": {
+   "file": "warrior_m_bracers.glb",
+   "shape": "bracers",
+   "variant": 0,
+   "kind": "garment",
+   "slot": "gloves",
+   "frame": "body",
+   "side": "both",
+   "garment": {
+    "body": "m",
+    "layer": 0.014
+   },
+   "lengthM": 0.1068,
+   "sizeM": [
+    1.38,
+    0.1068,
+    0.1269
+   ],
+   "bboxM": {
+    "min": [
+     -0.69,
+     0.3266,
+     -0.1084
+    ],
+    "max": [
+     0.69,
+     0.4334,
+     0.0184
+    ]
+   },
+   "com": [
+    0,
+    0.3801,
+    -0.0339
+   ],
+   "tris": 5988,
+   "verts": 6572,
+   "texPx": 1024,
+   "kb": 181
+  },
+  "warrior_m_hauberk": {
+   "file": "warrior_m_hauberk.glb",
+   "shape": "tunic",
+   "variant": 1,
+   "kind": "garment",
+   "slot": "shirt",
+   "frame": "body",
+   "side": "both",
+   "garment": {
+    "body": "m",
+    "layer": 0.006,
+    "skirt": true,
+    "sleeve": 0.2
+   },
+   "lengthM": 0.8398,
+   "sizeM": [
+    0.8892,
+    0.8398,
+    0.2481
+   ],
+   "bboxM": {
+    "min": [
+     -0.4448,
+     -0.2963,
+     -0.125
+    ],
+    "max": [
+     0.4445,
+     0.5435,
+     0.1231
+    ]
+   },
+   "com": [
+    0.0001,
+    0.1359,
+    -0.0043
+   ],
+   "tris": 13996,
+   "verts": 9602,
+   "texPx": 1024,
+   "kb": 361
+  },
+  "warrior_m_tabard": {
+   "file": "warrior_m_tabard.glb",
+   "shape": "jerkin",
+   "variant": 0,
+   "kind": "garment",
+   "slot": "chest",
+   "frame": "body",
+   "side": "both",
+   "garment": {
+    "body": "m",
+    "layer": 0.016,
+    "skirt": true,
+    "hang": 0.15
+   },
+   "lengthM": 0.9499,
+   "sizeM": [
+    0.7467,
+    0.9499,
+    0.3757
+   ],
+   "bboxM": {
+    "min": [
+     -0.3732,
+     -0.45,
+     -0.1928
+    ],
+    "max": [
+     0.3735,
+     0.4999,
+     0.1829
+    ]
+   },
+   "com": [
+    0.0007,
+    0.046,
+    -0.0116
+   ],
+   "tris": 13998,
+   "verts": 14422,
+   "texPx": 1024,
+   "kb": 413
+  },
+  "whisper_daggers": {
+   "file": "whisper_daggers.glb",
+   "shape": "twin_daggers",
+   "variant": 0,
+   "kind": "blade",
+   "guardY": -0.0867,
+   "grip": [
+    0,
+    0,
+    0
+   ],
+   "tip": [
+    0,
+    0.3753,
+    0
+   ],
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "faceNormal": [
+    0,
+    0,
+    1
+   ],
+   "edgeDir": [
+    1,
+    0,
+    0
+   ],
+   "lengthM": 0.45,
+   "sizeM": [
+    0.1091,
+    0.45,
+    0.096
+   ],
+   "bboxM": {
+    "min": [
+     -0.055,
+     -0.0747,
+     -0.0478
+    ],
+    "max": [
+     0.0541,
+     0.3753,
+     0.0482
+    ]
+   },
+   "com": [
+    -0.0006,
+    0.1338,
+    -0.0002
+   ],
+   "tris": 4196,
+   "verts": 3194,
+   "texPx": 512,
+   "kb": 109,
+   "pair": true,
+   "hands": 2,
+   "slot": "mainHand"
+  },
+  "whisper_mask": {
+   "file": "whisper_mask.glb",
+   "shape": "mask",
+   "variant": 0,
+   "kind": "face",
+   "mount": [
+    0,
+    0,
+    0
+   ],
+   "grip": [
+    0,
+    0,
+    0
+   ],
+   "faceNormal": [
+    0,
+    0,
+    1
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ],
+   "lengthM": 0.1868,
+   "sizeM": [
+    0.19,
+    0.1868,
+    0.1067
+   ],
+   "bboxM": {
+    "min": [
+     -0.095,
+     -0.0934,
+     -0.0634
+    ],
+    "max": [
+     0.095,
+     0.0934,
+     0.0433
+    ]
+   },
+   "com": [
+    -0.0001,
+    -0.003,
+    -0.0077
+   ],
+   "tris": 4998,
+   "verts": 5995,
+   "texPx": 512,
+   "kb": 172,
+   "slot": "head"
+  },
+  "woodcutter_cap": {
+   "file": "woodcutter_cap.glb",
+   "shape": "cap",
+   "variant": 0,
+   "kind": "head",
+   "mount": [
+    0,
+    0,
+    0
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ],
+   "forward": [
+    0,
+    0,
+    1
+   ],
+   "baseWidthM": 0.1893,
+   "baseDepthM": 0.2604,
+   "lengthM": 0.2876,
+   "sizeM": [
+    0.2799,
+    0.2876,
+    0.2632
+   ],
+   "bboxM": {
+    "min": [
+     -0.1077,
+     -0.0385,
+     -0.1315
+    ],
+    "max": [
+     0.1722,
+     0.2491,
+     0.1317
+    ]
+   },
+   "com": [
+    0.0207,
+    0.1175,
+    0.0005
+   ],
+   "tris": 6000,
+   "verts": 9943,
+   "texPx": 512,
+   "kb": 255,
+   "slot": "head"
+  },
+  "woodcutter_hatchet": {
+   "file": "woodcutter_hatchet.glb",
+   "shape": "axe",
+   "variant": 0,
+   "kind": "blade",
+   "grip": [
+    0,
+    0,
+    0
+   ],
+   "tip": [
+    0,
+    0.546,
+    0
+   ],
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "faceNormal": [
+    0,
+    0,
+    1
+   ],
+   "edgeDir": [
+    -1,
+    0,
+    0
+   ],
+   "lengthM": 0.7,
+   "sizeM": [
+    0.2737,
+    0.7,
+    0.0938
+   ],
+   "bboxM": {
+    "min": [
+     -0.1039,
+     -0.154,
+     -0.0458
+    ],
+    "max": [
+     0.1698,
+     0.546,
+     0.048
+    ]
+   },
+   "com": [
+    0.015,
+    0.2779,
+    0.0006
+   ],
+   "tris": 6486,
+   "verts": 5425,
+   "texPx": 512,
+   "kb": 170,
+   "hands": 1,
+   "slot": "offHand"
+  },
+  "wooden_club": {
+   "file": "wooden_club.glb",
+   "shape": "club",
+   "variant": 0,
+   "kind": "blade",
+   "grip": [
+    0,
+    0,
+    0
+   ],
+   "tip": [
+    0,
+    0.6,
+    0
+   ],
+   "axis": [
+    0,
+    1,
+    0
+   ],
+   "faceNormal": [
+    0,
+    0,
+    1
+   ],
+   "edgeDir": [
+    1,
+    0,
+    0
+   ],
+   "lengthM": 0.75,
+   "sizeM": [
+    0.1647,
+    0.75,
+    0.1356
+   ],
+   "bboxM": {
+    "min": [
+     -0.0777,
+     -0.15,
+     -0.0665
+    ],
+    "max": [
+     0.087,
+     0.6,
+     0.0692
+    ]
+   },
+   "com": [
+    0.0007,
+    0.301,
+    0.0009
+   ],
+   "tris": 4000,
+   "verts": 3813,
+   "texPx": 512,
+   "kb": 119,
+   "hands": 1,
+   "slot": "mainHand"
+  },
+  "wooden_shield": {
+   "file": "wooden_shield.glb",
+   "shape": "round_shield",
+   "variant": 0,
+   "kind": "shield",
+   "mount": [
+    0,
+    0,
+    0
+   ],
+   "grip": [
+    0,
+    0,
+    0
+   ],
+   "faceNormal": [
+    0,
+    0,
+    1
+   ],
+   "up": [
+    0,
+    1,
+    0
+   ],
+   "lengthM": 0.7127,
+   "sizeM": [
+    0.6996,
+    0.7127,
+    0.1984
+   ],
+   "bboxM": {
+    "min": [
+     -0.3499,
+     -0.3565,
+     -0.0108
+    ],
+    "max": [
+     0.3497,
+     0.3562,
+     0.1876
+    ]
+   },
+   "com": [
+    -0.0012,
+    -0.0115,
+    0.1171
+   ],
+   "tris": 6998,
+   "verts": 9731,
+   "texPx": 1024,
+   "kb": 294,
+   "slot": "offHand"
+  },
+  "assassin_m_boots": {
+   "file": "assassin_m_boots.glb",
+   "shape": "boot_cuffs",
+   "variant": 0,
+   "kind": "garment",
+   "slot": "boots",
+   "frame": "body",
+   "side": "both",
+   "garment": {
+    "body": "m",
+    "layer": 0.013,
+    "legs": true
+   },
+   "lengthM": 0.46,
+   "sizeM": [
+    0.304,
+    0.46,
+    0.48
+   ],
+   "bboxM": {
+    "min": [
+     -0.152,
+     -1.028,
+     -0.18
+    ],
+    "max": [
+     0.152,
+     -0.568,
+     0.3
+    ]
+   },
+   "com": [
+    0,
+    -0.8468,
+    0.0014
+   ],
+   "tris": 8300,
+   "verts": 9064,
+   "texPx": 1024,
+   "kb": 268
+  },
+  "assassin_m_bracers": {
+   "file": "assassin_m_bracers.glb",
+   "shape": "fingerless",
+   "variant": 0,
+   "kind": "garment",
+   "slot": "gloves",
+   "frame": "body",
+   "side": "both",
+   "garment": {
+    "body": "m",
+    "layer": 0.014
+   },
+   "lengthM": 0.095,
+   "sizeM": [
+    1.68,
+    0.095,
+    0.155
+   ],
+   "bboxM": {
+    "min": [
+     -0.84,
+     0.3245,
+     -0.1225
+    ],
+    "max": [
+     0.84,
+     0.4195,
+     0.0325
+    ]
+   },
+   "com": [
+    0,
+    0.3708,
+    -0.0466
+   ],
+   "tris": 6770,
+   "verts": 9266,
+   "texPx": 1024,
+   "kb": 290
+  },
+  "assassin_m_sash": {
+   "file": "assassin_m_sash.glb",
+   "shape": "sash",
+   "variant": 0,
+   "kind": "garment",
+   "slot": "belt",
+   "frame": "body",
+   "side": "both",
+   "garment": {
+    "body": "m",
+    "layer": 0.034
+   },
+   "lengthM": 0.41,
+   "sizeM": [
+    0.42,
+    0.41,
+    0.21
+   ],
+   "bboxM": {
+    "min": [
+     -0.21,
+     -0.31,
+     -0.02
+    ],
+    "max": [
+     0.21,
+     0.1,
+     0.19
+    ]
+   },
+   "com": [
+    -0.0182,
+    -0.0113,
+    0.1059
+   ],
+   "tris": 6646,
+   "verts": 10149,
+   "texPx": 1024,
+   "kb": 313
+  },
+  "assassin_m_scarf": {
+   "file": "assassin_m_scarf.glb",
+   "shape": "cloak_short",
+   "variant": 0,
+   "kind": "garment",
+   "slot": "cloak",
+   "frame": "body",
+   "side": "both",
+   "garment": {
+    "body": "m",
+    "layer": 0.03,
+    "sway": 0.3
+   },
+   "lengthM": 0.35,
+   "sizeM": [
+    0.6,
+    0.35,
+    0.35
+   ],
+   "bboxM": {
+    "min": [
+     -0.3,
+     0.2,
+     -0.2
+    ],
+    "max": [
+     0.3,
+     0.55,
+     0.15
+    ]
+   },
+   "com": [
+    0.0015,
+    0.4078,
+    -0.0291
+   ],
+   "tris": 6537,
+   "verts": 6931,
+   "texPx": 1024,
+   "kb": 253
+  },
+  "assassin_m_shirt": {
+   "file": "assassin_m_shirt.glb",
+   "shape": "shirt",
+   "variant": 1,
+   "kind": "garment",
+   "slot": "shirt",
+   "frame": "body",
+   "side": "both",
+   "garment": {
+    "body": "m",
+    "layer": 0.006,
+    "sleeve": 0.2
+   },
+   "lengthM": 0.69,
+   "sizeM": [
+    1.3901,
+    0.69,
+    0.2106
+   ],
+   "bboxM": {
+    "min": [
+     -0.6951,
+     -0.1697,
+     -0.1054
+    ],
+    "max": [
+     0.6951,
+     0.5203,
+     0.1052
+    ]
+   },
+   "com": [
+    -0.001,
+    0.2214,
+    -0.0038
+   ],
+   "tris": 9479,
+   "verts": 7939,
+   "texPx": 1024,
+   "kb": 220
+  },
+  "assassin_m_tabard": {
+   "file": "assassin_m_tabard.glb",
+   "shape": "jerkin",
+   "variant": 0,
+   "kind": "garment",
+   "slot": "chest",
+   "frame": "body",
+   "side": "both",
+   "garment": {
+    "body": "m",
+    "layer": 0.02,
+    "skirt": true,
+    "hang": 0.3,
+    "knee": 1
+   },
+   "lengthM": 1.23,
+   "sizeM": [
+    0.7118,
+    1.23,
+    0.4426
+   ],
+   "bboxM": {
+    "min": [
+     -0.3559,
+     -0.7,
+     -0.2193
+    ],
+    "max": [
+     0.3559,
+     0.53,
+     0.2234
+    ]
+   },
+   "com": [
+    0.0006,
+    -0.1373,
+    0.0073
+   ],
+   "tris": 7807,
+   "verts": 10862,
+   "texPx": 1024,
+   "kb": 360
+  },
+  "assassin_m_trousers": {
+   "file": "assassin_m_trousers.glb",
+   "shape": "trousers",
+   "variant": 3,
+   "kind": "garment",
+   "slot": "legs",
+   "frame": "body",
+   "side": "both",
+   "garment": {
+    "body": "m",
+    "layer": 0.011,
+    "legs": true
+   },
+   "lengthM": 0.93,
+   "sizeM": [
+    0.4001,
+    0.93,
+    0.2638
+   ],
+   "bboxM": {
+    "min": [
+     -0.1977,
+     -0.88,
+     -0.1447
+    ],
+    "max": [
+     0.2024,
+     0.05,
+     0.1191
+    ]
+   },
+   "com": [
+    -0.0001,
+    -0.3691,
+    -0.0132
+   ],
+   "tris": 7441,
+   "verts": 10733,
+   "texPx": 1024,
+   "kb": 257
+  },
+  "assassin_f_belt": {
+   "file": "assassin_f_belt.glb",
+   "shape": "belt_band",
+   "variant": 0,
+   "kind": "garment",
+   "slot": "belt",
+   "frame": "body",
+   "side": "both",
+   "garment": {
+    "body": "f",
+    "layer": 0.032
+   },
+   "lengthM": 0.35,
+   "sizeM": [
+    0.43,
+    0.35,
+    0.32
+   ],
+   "bboxM": {
+    "min": [
+     -0.215,
+     -0.25,
+     -0.16
+    ],
+    "max": [
+     0.215,
+     0.1,
+     0.16
+    ]
+   },
+   "com": [
+    0.0121,
+    0.0351,
+    0.0388
+   ],
+   "tris": 5945,
+   "verts": 8049,
+   "texPx": 1024,
+   "kb": 242
+  },
+  "assassin_f_boots": {
+   "file": "assassin_f_boots.glb",
+   "shape": "boot_cuffs",
+   "variant": 0,
+   "kind": "garment",
+   "slot": "boots",
+   "frame": "body",
+   "side": "both",
+   "garment": {
+    "body": "f",
+    "layer": 0.013,
+    "legs": true
+   },
+   "lengthM": 0.575,
+   "sizeM": [
+    0.32,
+    0.575,
+    0.47
+   ],
+   "bboxM": {
+    "min": [
+     -0.16,
+     -1.045,
+     -0.17
+    ],
+    "max": [
+     0.16,
+     -0.47,
+     0.3
+    ]
+   },
+   "com": [
+    0,
+    -0.7787,
+    0.0026
+   ],
+   "tris": 7380,
+   "verts": 9486,
+   "texPx": 1024,
+   "kb": 281
+  },
+  "assassin_f_bracers": {
+   "file": "assassin_f_bracers.glb",
+   "shape": "bracers",
+   "variant": 0,
+   "kind": "garment",
+   "slot": "gloves",
+   "frame": "body",
+   "side": "both",
+   "garment": {
+    "body": "f",
+    "layer": 0.014
+   },
+   "lengthM": 0.0651,
+   "sizeM": [
+    1.4,
+    0.0651,
+    0.0331
+   ],
+   "bboxM": {
+    "min": [
+     -0.7,
+     0.3395,
+     -0.0265
+    ],
+    "max": [
+     0.7,
+     0.4045,
+     0.0065
+    ]
+   },
+   "com": [
+    0,
+    0.3708,
+    -0.0106
+   ],
+   "tris": 5434,
+   "verts": 8826,
+   "texPx": 1024,
+   "kb": 263
+  },
+  "assassin_f_collar": {
+   "file": "assassin_f_collar.glb",
+   "shape": "cloak_short",
+   "variant": 0,
+   "kind": "garment",
+   "slot": "cloak",
+   "frame": "body",
+   "side": "both",
+   "garment": {
+    "body": "f",
+    "layer": 0.03,
+    "sway": 0.3
+   },
+   "lengthM": 0.42,
+   "sizeM": [
+    0.68,
+    0.42,
+    0.44
+   ],
+   "bboxM": {
+    "min": [
+     -0.34,
+     0.1,
+     -0.24
+    ],
+    "max": [
+     0.34,
+     0.52,
+     0.2
+    ]
+   },
+   "com": [
+    -0.0001,
+    0.3046,
+    -0.0399
+   ],
+   "tris": 8544,
+   "verts": 8470,
+   "texPx": 1024,
+   "kb": 269
+  },
+  "assassin_f_corset": {
+   "file": "assassin_f_corset.glb",
+   "shape": "jerkin",
+   "variant": 0,
+   "kind": "garment",
+   "slot": "chest",
+   "frame": "body",
+   "side": "both",
+   "garment": {
+    "body": "f",
+    "layer": 0.016,
+    "skirt": true
+   },
+   "lengthM": 0.72,
+   "sizeM": [
+    0.5343,
+    0.72,
+    0.2849
+   ],
+   "bboxM": {
+    "min": [
+     -0.2671,
+     -0.25,
+     -0.148
+    ],
+    "max": [
+     0.2671,
+     0.47,
+     0.1369
+    ]
+   },
+   "com": [
+    0.0002,
+    0.1096,
+    -0.0066
+   ],
+   "tris": 13516,
+   "verts": 12369,
+   "texPx": 1024,
+   "kb": 388
+  },
+  "assassin_f_shirt": {
+   "file": "assassin_f_shirt.glb",
+   "shape": "shirt",
+   "variant": 1,
+   "kind": "garment",
+   "slot": "shirt",
+   "frame": "body",
+   "side": "both",
+   "garment": {
+    "body": "f",
+    "layer": 0.006,
+    "sleeve": 0.2
+   },
+   "lengthM": 0.54,
+   "sizeM": [
+    1.3832,
+    0.54,
+    0.2405
+   ],
+   "bboxM": {
+    "min": [
+     -0.6916,
+     -0.0841,
+     -0.1214
+    ],
+    "max": [
+     0.6916,
+     0.4559,
+     0.1191
+    ]
+   },
+   "com": [
+    0,
+    0.2391,
+    -0.0087
+   ],
+   "tris": 8033,
+   "verts": 7360,
+   "texPx": 1024,
+   "kb": 246
+  },
+  "assassin_f_trousers": {
+   "file": "assassin_f_trousers.glb",
+   "shape": "trousers",
+   "variant": 3,
+   "kind": "garment",
+   "slot": "legs",
+   "frame": "body",
+   "side": "both",
+   "garment": {
+    "body": "f",
+    "layer": 0.011,
+    "legs": true
+   },
+   "lengthM": 0.93,
+   "sizeM": [
+    0.3904,
+    0.93,
+    0.2574
+   ],
+   "bboxM": {
+    "min": [
+     -0.1959,
+     -0.9,
+     -0.1213
+    ],
+    "max": [
+     0.1945,
+     0.03,
+     0.136
+    ]
+   },
+   "com": [
+    0.0003,
+    -0.404,
+    0.001
+   ],
+   "tris": 7498,
+   "verts": 12205,
+   "texPx": 1024,
+   "kb": 347
+  }
+ }
+}

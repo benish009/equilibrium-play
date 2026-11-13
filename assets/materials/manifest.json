@@ -1,0 +1,1219 @@
+{
+  "version": 1,
+  "generated": "2026-11-11",
+  "units": "tileMeters: метры в пространстве якорей экипировки (src/render/gear/common.ts, рост героя 1,05 м); плитка 512x512, бесшовная по обеим осям, WebP albedo + PNG нормали (OpenGL, +Y вверх)",
+  "usage": {
+    "albedo": "THREE.TextureLoader, colorSpace = SRGBColorSpace, wrapS = wrapT = RepeatWrapping, anisotropy 4+; uv.repeat = размер вещи в метрах / tileMeters",
+    "normal": "colorSpace по умолчанию (NoColorSpace), тот же repeat; material.normalScale = (normalScale, normalScale)",
+    "tint": "см. tint.mode у материала: ratio = умножать на look.color / baseColor, mix = лёгкий сдвиг, материал имеет свой цвет",
+    "metalness": "рекомендуемая металличность занижена: подсветки нарисованы в albedo, а у металла со средой RoomEnvironment полная металличность даёт чёрные пятна"
+  },
+  "materials": [
+    {
+      "id": "linen",
+      "name": "Лён",
+      "group": "cloth",
+      "albedo": "linen.webp",
+      "normal": "linen_n.png",
+      "emissive": null,
+      "size": 512,
+      "use": "Рубахи, туники, штаны, рясы ученика, нитяные перчатки, лёгкие плащи и накидки.",
+      "shapes": [
+        "shirt",
+        "tunic",
+        "trousers",
+        "robe",
+        "cloth_cuffs",
+        "cloth_boots",
+        "sash",
+        "cloak_short",
+        "mantle",
+        "hat_pointed"
+      ],
+      "baseColor": "#e3c490",
+      "baseLuma": 0.596,
+      "tint": {
+        "mode": "ratio",
+        "strength": 1,
+        "note": "material.color = linear(look.color) / linear(baseColor) по каналам (зажим до 1,6), map = albedo: простейший путь без шейдера; лучше всего для целевых цветов темнее baseColor или близких по яркости"
+      },
+      "tileMeters": 0.36,
+      "roughness": 0.95,
+      "metalness": 0,
+      "normalScale": 0.8,
+      "kb": {
+        "albedo": 58,
+        "normal": 140
+      },
+      "webpQuality": 92,
+      "source": {
+        "raw": "art/pipeline/materials/raw/linen_t4.jpg",
+        "tile": [
+          468,
+          468
+        ]
+      }
+    },
+    {
+      "id": "wool",
+      "name": "Шерсть грубая",
+      "group": "cloth",
+      "albedo": "wool.webp",
+      "normal": "wool_n.png",
+      "emissive": null,
+      "size": 512,
+      "use": "Дорожные плащи, накидки ополченцев, штаны, вязаные капюшоны и шапки, подкладки.",
+      "shapes": [
+        "cloak_short",
+        "cloak_long",
+        "mantle",
+        "trousers",
+        "hood",
+        "cowl",
+        "cap",
+        "sash",
+        "cloth_cuffs",
+        "cloth_boots",
+        "cloak_double",
+        "cloak_banner",
+        "cloak_hooded_long",
+        "cloak_chain"
+      ],
+      "baseColor": "#897264",
+      "baseLuma": 0.239,
+      "tint": {
+        "mode": "luma",
+        "strength": 1,
+        "note": "цвет вещи на яркость плитки: out = linear(look.color) * L(albedo) / baseLuma, L = 0,2126 R + 0,7152 G + 0,0722 B в линейном пространстве (вставка в map_fragment через onBeforeCompile); нужен, потому что у базы яркий оттенок и простое умножение на ratio мутит цвет"
+      },
+      "tileMeters": 0.3,
+      "roughness": 1,
+      "metalness": 0,
+      "normalScale": 0.8,
+      "kb": {
+        "albedo": 66,
+        "normal": 148
+      },
+      "webpQuality": 92,
+      "source": {
+        "raw": "art/pipeline/materials/raw/wool_t2.jpg",
+        "tile": [
+          502,
+          482
+        ]
+      }
+    },
+    {
+      "id": "burlap",
+      "name": "Дерюга",
+      "group": "cloth",
+      "albedo": "burlap.webp",
+      "normal": "burlap_n.png",
+      "emissive": null,
+      "size": 512,
+      "use": "Дерюжный плащ ведуна, мешковина, самодельные перчатки, капюшоны, ремни-перевязи.",
+      "shapes": [
+        "mantle",
+        "cloak_short",
+        "cowl",
+        "hat_wide",
+        "cloth_cuffs",
+        "straps",
+        "sash",
+        "cloth_boots",
+        "cloak_ragged"
+      ],
+      "baseColor": "#be915c",
+      "baseLuma": 0.341,
+      "tint": {
+        "mode": "luma",
+        "strength": 1,
+        "note": "цвет вещи на яркость плитки: out = linear(look.color) * L(albedo) / baseLuma, L = 0,2126 R + 0,7152 G + 0,0722 B в линейном пространстве (вставка в map_fragment через onBeforeCompile); нужен, потому что у базы яркий оттенок и простое умножение на ratio мутит цвет"
+      },
+      "tileMeters": 0.3,
+      "roughness": 1,
+      "metalness": 0,
+      "normalScale": 0.7,
+      "kb": {
+        "albedo": 80,
+        "normal": 150
+      },
+      "webpQuality": 92,
+      "source": {
+        "raw": "art/pipeline/materials/raw/burlap_t1.jpg",
+        "tile": [
+          532,
+          520
+        ]
+      }
+    },
+    {
+      "id": "silk",
+      "name": "Шёлк",
+      "group": "cloth",
+      "albedo": "silk.webp",
+      "normal": null,
+      "emissive": null,
+      "size": 512,
+      "use": "Одеяния лунного чародея и Зари, кушаки, подкладка плащей, лёгкие накидки. Блеск задаёт низкая roughness.",
+      "shapes": [
+        "robe",
+        "sash",
+        "mantle",
+        "cloak_long",
+        "cloth_cuffs",
+        "hat_pointed",
+        "shirt"
+      ],
+      "baseColor": "#ddd6cd",
+      "baseLuma": 0.689,
+      "tint": {
+        "mode": "ratio",
+        "strength": 1,
+        "note": "material.color = linear(look.color) / linear(baseColor) по каналам (зажим до 1,6), map = albedo: простейший путь без шейдера; лучше всего для целевых цветов темнее baseColor или близких по яркости"
+      },
+      "tileMeters": 0.6,
+      "roughness": 0.35,
+      "metalness": 0,
+      "normalScale": null,
+      "kb": {
+        "albedo": 55,
+        "normal": 0
+      },
+      "webpQuality": 92,
+      "source": {
+        "procedural": "silk"
+      }
+    },
+    {
+      "id": "velvet",
+      "name": "Бархат",
+      "group": "cloth",
+      "albedo": "velvet.webp",
+      "normal": "velvet_n.png",
+      "emissive": null,
+      "size": 512,
+      "use": "Тёмные богатые мантии и колпаки, подбой плащей Хранителя Печати, шляпы.",
+      "shapes": [
+        "robe",
+        "mantle",
+        "cloak_long",
+        "hat_pointed",
+        "hat_wide",
+        "sash"
+      ],
+      "baseColor": "#69213f",
+      "baseLuma": 0.05,
+      "tint": {
+        "mode": "luma",
+        "strength": 1,
+        "note": "цвет вещи на яркость плитки: out = linear(look.color) * L(albedo) / baseLuma, L = 0,2126 R + 0,7152 G + 0,0722 B в линейном пространстве (вставка в map_fragment через onBeforeCompile); нужен, потому что у базы яркий оттенок и простое умножение на ratio мутит цвет"
+      },
+      "tileMeters": 0.5,
+      "roughness": 0.85,
+      "metalness": 0,
+      "normalScale": 0.8,
+      "kb": {
+        "albedo": 51,
+        "normal": 137
+      },
+      "webpQuality": 92,
+      "source": {
+        "raw": "art/pipeline/materials/raw/velvet_t2.jpg",
+        "tile": [
+          538,
+          538
+        ]
+      }
+    },
+    {
+      "id": "mage_cloth",
+      "name": "Ткань мага с вышивкой",
+      "group": "cloth",
+      "albedo": "mage_cloth.webp",
+      "normal": "mage_cloth_n.png",
+      "emissive": {
+        "map": "mage_cloth_e.webp",
+        "color": "#b48cff",
+        "note": "яркость маски = сила свечения, цвет задаёт emissive; вместе с look.colors.glow пульсирует на общем приёмнике"
+      },
+      "size": 512,
+      "use": "Ряса и мантия Хранителя Печати, одеяния лунного чародея: тёмно-синяя ткань с фиолетовой вышивкой (луны, звёзды, спирали). Вышивку можно пустить в emissive по яркости.",
+      "shapes": [
+        "robe",
+        "mantle",
+        "cloak_long",
+        "hat_pointed",
+        "hat_wide",
+        "cloth_cuffs",
+        "sash",
+        "cloak_wings"
+      ],
+      "baseColor": "#383f73",
+      "baseLuma": 0.067,
+      "tint": {
+        "mode": "mix",
+        "strength": 0.3,
+        "note": "у материала свои цвета (узор, патина, вышивка): тонировать слабо, mix(albedo, ratio или luma-вариант, strength), либо брать как есть"
+      },
+      "tileMeters": 0.45,
+      "roughness": 0.9,
+      "metalness": 0,
+      "normalScale": 0.8,
+      "kb": {
+        "albedo": 54,
+        "normal": 141
+      },
+      "webpQuality": 92,
+      "source": {
+        "raw": "art/pipeline/materials/raw/mage_cloth_t1.jpg",
+        "tile": [
+          534,
+          502
+        ]
+      }
+    },
+    {
+      "id": "guard_twill",
+      "name": "Ткань стражи (красно-синяя саржа)",
+      "group": "cloth",
+      "albedo": "guard_twill.webp",
+      "normal": "guard_twill_n.png",
+      "emissive": null,
+      "size": 512,
+      "use": "Плащ, туника-накидка и кушак гвардейца: синяя саржа с красными нитяными полосками. Полоски вертикальные, ровно 4 на плитку.",
+      "shapes": [
+        "cloak_long",
+        "cloak_short",
+        "tunic",
+        "jerkin",
+        "sash",
+        "mantle",
+        "cloth_cuffs",
+        "trousers"
+      ],
+      "baseColor": "#1b569b",
+      "baseLuma": 0.11,
+      "tint": {
+        "mode": "mix",
+        "strength": 0.35,
+        "note": "у материала свои цвета (узор, патина, вышивка): тонировать слабо, mix(albedo, ratio или luma-вариант, strength), либо брать как есть"
+      },
+      "tileMeters": 0.4,
+      "roughness": 0.92,
+      "metalness": 0,
+      "normalScale": 0.8,
+      "kb": {
+        "albedo": 86,
+        "normal": 158
+      },
+      "webpQuality": 92,
+      "source": {
+        "raw": "art/pipeline/materials/raw/twill_blue_t1.jpg",
+        "tile": [
+          528,
+          538
+        ]
+      }
+    },
+    {
+      "id": "rope",
+      "name": "Верёвка",
+      "group": "cloth",
+      "albedo": "rope.webp",
+      "normal": "rope_n.png",
+      "emissive": null,
+      "size": 512,
+      "use": "Верёвочные пояса, лозы и шнуры, перевязи, плетёные накладки. Нити идут вдоль X: поворачивать UV по направлению пояса.",
+      "shapes": [
+        "belt_band",
+        "sash",
+        "straps",
+        "cloth_cuffs"
+      ],
+      "baseColor": "#ad8d60",
+      "baseLuma": 0.386,
+      "tint": {
+        "mode": "luma",
+        "strength": 1,
+        "note": "цвет вещи на яркость плитки: out = linear(look.color) * L(albedo) / baseLuma, L = 0,2126 R + 0,7152 G + 0,0722 B в линейном пространстве (вставка в map_fragment через onBeforeCompile); нужен, потому что у базы яркий оттенок и простое умножение на ratio мутит цвет"
+      },
+      "tileMeters": 0.2,
+      "roughness": 0.95,
+      "metalness": 0,
+      "normalScale": 0.6,
+      "kb": {
+        "albedo": 58,
+        "normal": 127
+      },
+      "webpQuality": 92,
+      "source": {
+        "raw": "art/pipeline/materials/raw/rope_t2.jpg",
+        "tile": [
+          430,
+          430
+        ]
+      }
+    },
+    {
+      "id": "leather",
+      "name": "Кожа гладкая",
+      "group": "leather",
+      "albedo": "leather.webp",
+      "normal": "leather_n.png",
+      "emissive": null,
+      "size": 512,
+      "use": "Жилеты и куртки, пояса, перчатки, сапоги, капюшоны, ремни и обложки книг.",
+      "shapes": [
+        "jerkin",
+        "belt_band",
+        "boot_cuffs",
+        "fingerless",
+        "bracers",
+        "hood",
+        "cap",
+        "straps",
+        "shoes",
+        "tome"
+      ],
+      "baseColor": "#8e5c3a",
+      "baseLuma": 0.144,
+      "tint": {
+        "mode": "luma",
+        "strength": 1,
+        "note": "цвет вещи на яркость плитки: out = linear(look.color) * L(albedo) / baseLuma, L = 0,2126 R + 0,7152 G + 0,0722 B в линейном пространстве (вставка в map_fragment через onBeforeCompile); нужен, потому что у базы яркий оттенок и простое умножение на ratio мутит цвет"
+      },
+      "tileMeters": 0.5,
+      "roughness": 0.62,
+      "metalness": 0.02,
+      "normalScale": 0.8,
+      "kb": {
+        "albedo": 66,
+        "normal": 150
+      },
+      "webpQuality": 92,
+      "source": {
+        "raw": "art/pipeline/materials/raw/leather_t3.jpg",
+        "tile": [
+          538,
+          538
+        ]
+      }
+    },
+    {
+      "id": "leather_dark",
+      "name": "Кожа дублёная тёмная",
+      "group": "leather",
+      "albedo": "leather_dark.webp",
+      "normal": "leather_dark_n.png",
+      "emissive": null,
+      "size": 512,
+      "use": "Куртки и перчатки Шёпота и тёмных комплектов, поношенные башмаки, тёмные пояса.",
+      "shapes": [
+        "jerkin",
+        "belt_band",
+        "boot_cuffs",
+        "fingerless",
+        "hood",
+        "shoes",
+        "straps",
+        "bracers",
+        "mask"
+      ],
+      "baseColor": "#533127",
+      "baseLuma": 0.05,
+      "tint": {
+        "mode": "luma",
+        "strength": 1,
+        "note": "цвет вещи на яркость плитки: out = linear(look.color) * L(albedo) / baseLuma, L = 0,2126 R + 0,7152 G + 0,0722 B в линейном пространстве (вставка в map_fragment через onBeforeCompile); нужен, потому что у базы яркий оттенок и простое умножение на ratio мутит цвет"
+      },
+      "tileMeters": 0.5,
+      "roughness": 0.7,
+      "metalness": 0.02,
+      "normalScale": 0.8,
+      "kb": {
+        "albedo": 89,
+        "normal": 153
+      },
+      "webpQuality": 92,
+      "source": {
+        "raw": "art/pipeline/materials/raw/leather_dark_t1.jpg",
+        "tile": [
+          538,
+          532
+        ]
+      }
+    },
+    {
+      "id": "hide_bog",
+      "name": "Шкура болотная",
+      "group": "leather",
+      "albedo": "hide_bog.webp",
+      "normal": "hide_bog_n.png",
+      "emissive": null,
+      "size": 512,
+      "use": "Комплект «шкура топей»: плащ, нагрудник, наручи, сапоги-вездеходы; зеленовато-бурая кожа с мхом и бородавками.",
+      "shapes": [
+        "fur_mantle",
+        "chest_plate",
+        "gauntlets",
+        "boot_cuffs",
+        "jerkin",
+        "fingerless",
+        "belt_band",
+        "tusk_helm"
+      ],
+      "baseColor": "#878442",
+      "baseLuma": 0.246,
+      "tint": {
+        "mode": "mix",
+        "strength": 0.4,
+        "note": "у материала свои цвета (узор, патина, вышивка): тонировать слабо, mix(albedo, ratio или luma-вариант, strength), либо брать как есть"
+      },
+      "tileMeters": 0.6,
+      "roughness": 0.55,
+      "metalness": 0,
+      "normalScale": 0.7,
+      "kb": {
+        "albedo": 52,
+        "normal": 138
+      },
+      "webpQuality": 92,
+      "source": {
+        "raw": "art/pipeline/materials/raw/hide_bog_t1.jpg",
+        "tile": [
+          538,
+          538
+        ]
+      }
+    },
+    {
+      "id": "moss_vine",
+      "name": "Тина, мох и ряска",
+      "group": "cloth",
+      "albedo": "moss_vine.webp",
+      "normal": "moss_vine_n.png",
+      "emissive": null,
+      "size": 512,
+      "use": "Капюшон из ряски, плащ из тины, накидка из тумана, пояс из лозы, перчатки с ряской. Тёмная вода между кочками: можно подмешивать к ткани.",
+      "shapes": [
+        "cowl",
+        "cloak_long",
+        "mantle",
+        "sash",
+        "cloth_cuffs",
+        "belt_band",
+        "cloth_boots"
+      ],
+      "baseColor": "#586b27",
+      "baseLuma": 0.223,
+      "tint": {
+        "mode": "mix",
+        "strength": 0.3,
+        "note": "у материала свои цвета (узор, патина, вышивка): тонировать слабо, mix(albedo, ratio или luma-вариант, strength), либо брать как есть"
+      },
+      "tileMeters": 0.6,
+      "roughness": 0.8,
+      "metalness": 0,
+      "normalScale": 0.7,
+      "kb": {
+        "albedo": 68,
+        "normal": 134
+      },
+      "webpQuality": 92,
+      "source": {
+        "raw": "art/pipeline/materials/raw/moss_vine_t1.jpg",
+        "tile": [
+          538,
+          538
+        ]
+      }
+    },
+    {
+      "id": "fur_grey",
+      "name": "Мех серый",
+      "group": "fur",
+      "albedo": "fur_grey.webp",
+      "normal": "fur_grey_n.png",
+      "emissive": null,
+      "size": 512,
+      "use": "Волчьи накидки и капюшоны, шкуры оборотня, меховая оторочка, северные сапоги и наручи.",
+      "shapes": [
+        "fur_mantle",
+        "fur_vest",
+        "wolf_hood",
+        "cap",
+        "bracers",
+        "boot_cuffs",
+        "pauldrons"
+      ],
+      "baseColor": "#818180",
+      "baseLuma": 0.293,
+      "tint": {
+        "mode": "ratio",
+        "strength": 1,
+        "note": "material.color = linear(look.color) / linear(baseColor) по каналам (зажим до 1,6), map = albedo: простейший путь без шейдера; лучше всего для целевых цветов темнее baseColor или близких по яркости"
+      },
+      "tileMeters": 0.4,
+      "roughness": 0.95,
+      "metalness": 0,
+      "normalScale": 0.7,
+      "kb": {
+        "albedo": 50,
+        "normal": 132
+      },
+      "webpQuality": 92,
+      "source": {
+        "raw": "art/pipeline/materials/raw/fur_grey_t4.jpg",
+        "tile": [
+          452,
+          430
+        ]
+      }
+    },
+    {
+      "id": "fur_brown",
+      "name": "Мех бурый",
+      "group": "fur",
+      "albedo": "fur_brown.webp",
+      "normal": "fur_brown_n.png",
+      "emissive": null,
+      "size": 512,
+      "use": "Медвежья шкура ярла, меховая накидка и шапка лесоруба, жилет из бурой шкуры, меховые сапоги.",
+      "shapes": [
+        "fur_mantle",
+        "fur_vest",
+        "cap",
+        "boot_cuffs",
+        "bracers",
+        "wolf_hood",
+        "cloak_pelt"
+      ],
+      "baseColor": "#754328",
+      "baseLuma": 0.115,
+      "tint": {
+        "mode": "luma",
+        "strength": 1,
+        "note": "цвет вещи на яркость плитки: out = linear(look.color) * L(albedo) / baseLuma, L = 0,2126 R + 0,7152 G + 0,0722 B в линейном пространстве (вставка в map_fragment через onBeforeCompile); нужен, потому что у базы яркий оттенок и простое умножение на ratio мутит цвет"
+      },
+      "tileMeters": 0.4,
+      "roughness": 0.95,
+      "metalness": 0,
+      "normalScale": 0.8,
+      "kb": {
+        "albedo": 64,
+        "normal": 139
+      },
+      "webpQuality": 92,
+      "source": {
+        "raw": "art/pipeline/materials/raw/fur_brown_t2.jpg",
+        "tile": [
+          538,
+          538
+        ]
+      }
+    },
+    {
+      "id": "chainmail",
+      "name": "Кольчуга",
+      "group": "metal",
+      "albedo": "chainmail.webp",
+      "normal": "chainmail_n.png",
+      "emissive": null,
+      "size": 512,
+      "use": "Кольчужная безрукавка ополченца, кольчужные рукава и подолы под латами, кольчужные вставки.",
+      "shapes": [
+        "chain_vest",
+        "pauldrons",
+        "gauntlets",
+        "chest_plate",
+        "plume_helm"
+      ],
+      "baseColor": "#6e7277",
+      "baseLuma": 0.237,
+      "tint": {
+        "mode": "ratio",
+        "strength": 1,
+        "note": "material.color = linear(look.color) / linear(baseColor) по каналам (зажим до 1,6), map = albedo: простейший путь без шейдера; лучше всего для целевых цветов темнее baseColor или близких по яркости"
+      },
+      "tileMeters": 0.25,
+      "roughness": 0.42,
+      "metalness": 0.55,
+      "normalScale": 0.6,
+      "kb": {
+        "albedo": 102,
+        "normal": 160
+      },
+      "webpQuality": 92,
+      "source": {
+        "raw": "art/pipeline/materials/raw/chainmail_t3.jpg",
+        "tile": [
+          528,
+          528
+        ]
+      }
+    },
+    {
+      "id": "plate_steel",
+      "name": "Пластинчатая сталь",
+      "group": "metal",
+      "albedo": "plate_steel.webp",
+      "normal": "plate_steel_n.png",
+      "emissive": null,
+      "size": 512,
+      "use": "Латы гвардейцев и ополчения, шлемы, наручи, поножи, щиты: шлифованная сталь с царапинами и потёртостями.",
+      "shapes": [
+        "chest_plate",
+        "gauntlets",
+        "greaves",
+        "plume_helm",
+        "helm",
+        "cap",
+        "round_shield",
+        "kite_shield",
+        "pauldrons",
+        "bracers"
+      ],
+      "baseColor": "#a8b2b4",
+      "baseLuma": 0.436,
+      "tint": {
+        "mode": "ratio",
+        "strength": 1,
+        "note": "material.color = linear(look.color) / linear(baseColor) по каналам (зажим до 1,6), map = albedo: простейший путь без шейдера; лучше всего для целевых цветов темнее baseColor или близких по яркости"
+      },
+      "tileMeters": 0.8,
+      "roughness": 0.35,
+      "metalness": 0.6,
+      "normalScale": 0.8,
+      "kb": {
+        "albedo": 19,
+        "normal": 108
+      },
+      "webpQuality": 92,
+      "source": {
+        "raw": "art/pipeline/materials/raw/plate_t3.jpg",
+        "tile": [
+          556,
+          556
+        ]
+      }
+    },
+    {
+      "id": "dark_iron",
+      "name": "Чернёное железо",
+      "group": "metal",
+      "albedo": "dark_iron.webp",
+      "normal": "dark_iron_n.png",
+      "emissive": null,
+      "size": 512,
+      "use": "Рогатый шлем и латы ярла, шипастые наручи, пряжки и оковка тёмных комплектов; ржавые пятна.",
+      "shapes": [
+        "horned_helm",
+        "chest_plate",
+        "gauntlets",
+        "greaves",
+        "pauldrons",
+        "bracers",
+        "tusk_helm",
+        "belt_band"
+      ],
+      "baseColor": "#535151",
+      "baseLuma": 0.086,
+      "tint": {
+        "mode": "luma",
+        "strength": 1,
+        "note": "цвет вещи на яркость плитки: out = linear(look.color) * L(albedo) / baseLuma, L = 0,2126 R + 0,7152 G + 0,0722 B в линейном пространстве (вставка в map_fragment через onBeforeCompile); нужен, потому что у базы яркий оттенок и простое умножение на ratio мутит цвет"
+      },
+      "tileMeters": 0.7,
+      "roughness": 0.5,
+      "metalness": 0.5,
+      "normalScale": 0.8,
+      "kb": {
+        "albedo": 25,
+        "normal": 139
+      },
+      "webpQuality": 92,
+      "source": {
+        "raw": "art/pipeline/materials/raw/dark_iron_t1.jpg",
+        "tile": [
+          430,
+          430
+        ]
+      }
+    },
+    {
+      "id": "bronze_patina",
+      "name": "Бронза с патиной",
+      "group": "metal",
+      "albedo": "bronze_patina.webp",
+      "normal": "bronze_patina_n.png",
+      "emissive": null,
+      "size": 512,
+      "use": "Комплект Болотного Стража: шлем, латы, рукавицы, поножи, щит-черепаха; позеленевшая бронза с вмятинами от чекана.",
+      "shapes": [
+        "plume_helm",
+        "chest_plate",
+        "gauntlets",
+        "greaves",
+        "round_shield",
+        "pauldrons",
+        "belt_band"
+      ],
+      "baseColor": "#af6c42",
+      "baseLuma": 0.213,
+      "tint": {
+        "mode": "mix",
+        "strength": 0.35,
+        "note": "у материала свои цвета (узор, патина, вышивка): тонировать слабо, mix(albedo, ratio или luma-вариант, strength), либо брать как есть"
+      },
+      "tileMeters": 0.6,
+      "roughness": 0.55,
+      "metalness": 0.5,
+      "normalScale": 0.8,
+      "kb": {
+        "albedo": 48,
+        "normal": 146
+      },
+      "webpQuality": 92,
+      "source": {
+        "raw": "art/pipeline/materials/raw/bronze_t1.jpg",
+        "tile": [
+          538,
+          526
+        ]
+      }
+    },
+    {
+      "id": "gold_trim",
+      "name": "Золотая отделка",
+      "group": "metal",
+      "albedo": "gold_trim.webp",
+      "normal": "gold_trim_n.png",
+      "emissive": null,
+      "size": 512,
+      "use": "Латы и шлем Зари, золотая окантовка мантий и рукавов, пряжки, эмблемы, орнамент на щитах. Тонкий узор: вьющиеся побеги и ромбы по сетке.",
+      "shapes": [
+        "plume_helm",
+        "chest_plate",
+        "gauntlets",
+        "greaves",
+        "kite_shield",
+        "round_shield",
+        "belt_band",
+        "robe",
+        "circlet"
+      ],
+      "baseColor": "#daa32b",
+      "baseLuma": 0.435,
+      "tint": {
+        "mode": "mix",
+        "strength": 0.25,
+        "note": "у материала свои цвета (узор, патина, вышивка): тонировать слабо, mix(albedo, ratio или luma-вариант, strength), либо брать как есть"
+      },
+      "tileMeters": 0.25,
+      "roughness": 0.3,
+      "metalness": 0.7,
+      "normalScale": 0.6,
+      "kb": {
+        "albedo": 49,
+        "normal": 149
+      },
+      "webpQuality": 92,
+      "source": {
+        "raw": "art/pipeline/materials/raw/gold_t1.jpg",
+        "tile": [
+          480,
+          486
+        ]
+      }
+    },
+    {
+      "id": "silver_moon",
+      "name": "Серебро лунное",
+      "group": "metal",
+      "albedo": "silver_moon.webp",
+      "normal": "silver_moon_n.png",
+      "emissive": null,
+      "size": 512,
+      "use": "Комплекты Лунного Стража, лунного волка и лунного чародея: серебристо-голубой металл с гравировкой из лун и звёзд; обруч, полумаска, щит.",
+      "shapes": [
+        "plume_helm",
+        "chest_plate",
+        "gauntlets",
+        "greaves",
+        "round_shield",
+        "circlet",
+        "half_mask",
+        "wolf_hood",
+        "belt_band"
+      ],
+      "baseColor": "#b2bdc3",
+      "baseLuma": 0.506,
+      "tint": {
+        "mode": "mix",
+        "strength": 0.3,
+        "note": "у материала свои цвета (узор, патина, вышивка): тонировать слабо, mix(albedo, ratio или luma-вариант, strength), либо брать как есть"
+      },
+      "tileMeters": 0.4,
+      "roughness": 0.28,
+      "metalness": 0.65,
+      "normalScale": 0.8,
+      "kb": {
+        "albedo": 38,
+        "normal": 137
+      },
+      "webpQuality": 92,
+      "source": {
+        "raw": "art/pipeline/materials/raw/silver_t1.jpg",
+        "tile": [
+          538,
+          538
+        ]
+      }
+    },
+    {
+      "id": "bone",
+      "name": "Кость",
+      "group": "other",
+      "albedo": "bone.webp",
+      "normal": "bone_n.png",
+      "emissive": null,
+      "size": 512,
+      "use": "Череп вепря, нагрудник из кожи и кости, клыки и когти, застёжки, рога; желтоватая кость с трещинами и порами.",
+      "shapes": [
+        "tusk_helm",
+        "chest_plate",
+        "horned_helm",
+        "belt_band",
+        "gauntlets",
+        "bracers",
+        "tome"
+      ],
+      "baseColor": "#efe1b3",
+      "baseLuma": 0.789,
+      "tint": {
+        "mode": "ratio",
+        "strength": 1,
+        "note": "material.color = linear(look.color) / linear(baseColor) по каналам (зажим до 1,6), map = albedo: простейший путь без шейдера; лучше всего для целевых цветов темнее baseColor или близких по яркости"
+      },
+      "tileMeters": 0.5,
+      "roughness": 0.6,
+      "metalness": 0,
+      "normalScale": 0.8,
+      "kb": {
+        "albedo": 25,
+        "normal": 107
+      },
+      "webpQuality": 92,
+      "source": {
+        "raw": "art/pipeline/materials/raw/bone_t1.jpg",
+        "tile": [
+          538,
+          538
+        ]
+      }
+    },
+    {
+      "id": "rune_stone",
+      "name": "Рунный камень",
+      "group": "other",
+      "albedo": "rune_stone.webp",
+      "normal": "rune_stone_n.png",
+      "emissive": {
+        "map": "rune_stone_e.webp",
+        "color": "#a46bff",
+        "note": "яркость маски = сила свечения, цвет задаёт emissive; вместе с look.colors.glow пульсирует на общем приёмнике"
+      },
+      "size": 512,
+      "use": "Эгида Гурла, печати Хранителя, сфера и фолиант, наплечники с рунами: серый камень, фиолетовые руны. Руны можно пустить в emissive по насыщенности.",
+      "shapes": [
+        "round_shield",
+        "kite_shield",
+        "orb",
+        "tome",
+        "circlet",
+        "pauldrons",
+        "chest_plate"
+      ],
+      "baseColor": "#786b82",
+      "baseLuma": 0.187,
+      "tint": {
+        "mode": "mix",
+        "strength": 0.15,
+        "note": "у материала свои цвета (узор, патина, вышивка): тонировать слабо, mix(albedo, ratio или luma-вариант, strength), либо брать как есть"
+      },
+      "tileMeters": 0.45,
+      "roughness": 0.85,
+      "metalness": 0,
+      "normalScale": 0.7,
+      "kb": {
+        "albedo": 61,
+        "normal": 142
+      },
+      "webpQuality": 92,
+      "source": {
+        "raw": "art/pipeline/materials/raw/rune_stone_t1.jpg",
+        "tile": [
+          538,
+          538
+        ]
+      }
+    },
+    {
+      "id": "scales_green",
+      "name": "Чешуя зелёная",
+      "group": "leather",
+      "albedo": "scales_green.webp",
+      "normal": "scales_green_n.png",
+      "emissive": null,
+      "size": 512,
+      "use": "Жилет из шкуры болотного змея, перчатки и сапоги топляка, чешуйчатые вставки: мелкая зелёная чешуя с тёмной обводкой.",
+      "shapes": [
+        "jerkin",
+        "fingerless",
+        "boot_cuffs",
+        "bracers",
+        "chest_plate",
+        "gauntlets",
+        "belt_band"
+      ],
+      "baseColor": "#61844d",
+      "baseLuma": 0.245,
+      "tint": {
+        "mode": "mix",
+        "strength": 0.35,
+        "note": "у материала свои цвета (узор, патина, вышивка): тонировать слабо, mix(albedo, ratio или luma-вариант, strength), либо брать как есть"
+      },
+      "tileMeters": 0.28,
+      "roughness": 0.45,
+      "metalness": 0.05,
+      "normalScale": 0.6,
+      "kb": {
+        "albedo": 58,
+        "normal": 142
+      },
+      "webpQuality": 92,
+      "source": {
+        "raw": "art/pipeline/materials/raw/scales_t1.jpg",
+        "tile": [
+          520,
+          520
+        ]
+      }
+    },
+    {
+      "id": "feathers",
+      "name": "Перо",
+      "group": "other",
+      "albedo": "feathers.webp",
+      "normal": "feathers_n.png",
+      "emissive": null,
+      "size": 512,
+      "use": "cloak_feather (плащ из чёрных перьев, плащ Вороньей Яги), перья на капюшонах и плечах: перья рядами вниз, сине-фиолетовый отлив.",
+      "shapes": [
+        "cloak_feather",
+        "hood",
+        "cowl",
+        "pauldrons",
+        "mantle",
+        "cloak_feather_long"
+      ],
+      "baseColor": "#394a6f",
+      "baseLuma": 0.114,
+      "tint": {
+        "mode": "mix",
+        "strength": 0.4,
+        "note": "у материала свои цвета (узор, патина, вышивка): тонировать слабо, mix(albedo, ratio или luma-вариант, strength), либо брать как есть"
+      },
+      "tileMeters": 0.35,
+      "roughness": 0.55,
+      "metalness": 0.05,
+      "normalScale": 0.8,
+      "kb": {
+        "albedo": 59,
+        "normal": 137
+      },
+      "webpQuality": 92,
+      "source": {
+        "raw": "art/pipeline/materials/raw/feathers_t1.jpg",
+        "tile": [
+          538,
+          538
+        ]
+      }
+    },
+    {
+      "id": "bronze_green",
+      "name": "Бронза, позеленевшая патиной",
+      "group": "metal",
+      "albedo": "bronze_green.webp",
+      "normal": "bronze_green_n.png",
+      "emissive": null,
+      "size": 512,
+      "use": "Зелёная окись на меди: латы, пояса, рукавицы и поножи Болотного Стража, когда нужна именно зелёная патина, а не рыжая бронза.",
+      "shapes": [
+        "chest_plate",
+        "gauntlets",
+        "greaves",
+        "pauldrons",
+        "belt_band",
+        "plume_helm",
+        "round_shield"
+      ],
+      "baseColor": "#4d977a",
+      "baseLuma": 0.251,
+      "tint": {
+        "mode": "mix",
+        "strength": 0.35,
+        "note": "у материала свои цвета (узор, патина, вышивка): тонировать слабо, mix(albedo, ratio или luma-вариант, strength), либо брать как есть"
+      },
+      "tileMeters": 0.6,
+      "roughness": 0.55,
+      "metalness": 0.5,
+      "normalScale": 0.8,
+      "kb": {
+        "albedo": 40,
+        "normal": 176
+      },
+      "webpQuality": 92,
+      "source": {
+        "raw": "art/pipeline/materials/variants.mjs",
+        "tile": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": "quilted_leather",
+      "name": "Стёганая кожа с ромбами",
+      "group": "leather",
+      "albedo": "quilted_leather.webp",
+      "normal": "quilted_leather_n.png",
+      "emissive": null,
+      "size": 512,
+      "use": "Стёганые жилеты и куртки: ромбы со строчкой и пуговицами на узлах (жилет из бурой шкуры, подбивка под латы).",
+      "shapes": [
+        "jerkin",
+        "fur_vest",
+        "chain_vest",
+        "straps",
+        "bracers",
+        "boot_cuffs"
+      ],
+      "baseColor": "#7e5334",
+      "baseLuma": 0.108,
+      "tint": {
+        "mode": "luma",
+        "strength": 1,
+        "note": "цвет вещи на яркость плитки: out = linear(look.color) * L(albedo) / baseLuma, L = 0,2126 R + 0,7152 G + 0,0722 B в линейном пространстве (вставка в map_fragment через onBeforeCompile); нужен, потому что у базы яркий оттенок и простое умножение на ratio мутит цвет"
+      },
+      "tileMeters": 0.4,
+      "roughness": 0.66,
+      "metalness": 0.02,
+      "normalScale": 0.9,
+      "kb": {
+        "albedo": 86,
+        "normal": 159
+      },
+      "webpQuality": 92,
+      "source": {
+        "raw": "art/pipeline/materials/variants.mjs",
+        "tile": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": "wool_knit",
+      "name": "Трикотаж мелкой вязки",
+      "group": "cloth",
+      "albedo": "wool_knit.webp",
+      "normal": "wool_knit_n.png",
+      "emissive": null,
+      "size": 512,
+      "use": "Вязаные шапки, капюшоны, перчатки и подолы: мелкие V-петли гладью вместо крупных кос шерсти.",
+      "shapes": [
+        "hood",
+        "cowl",
+        "cap",
+        "cloth_cuffs",
+        "cloth_boots",
+        "sash",
+        "trousers",
+        "cloak_short",
+        "cloak_long",
+        "mantle"
+      ],
+      "baseColor": "#9e7b61",
+      "baseLuma": 0.222,
+      "tint": {
+        "mode": "luma",
+        "strength": 1,
+        "note": "цвет вещи на яркость плитки: out = linear(look.color) * L(albedo) / baseLuma, L = 0,2126 R + 0,7152 G + 0,0722 B в линейном пространстве (вставка в map_fragment через onBeforeCompile); нужен, потому что у базы яркий оттенок и простое умножение на ratio мутит цвет"
+      },
+      "tileMeters": 0.26,
+      "roughness": 1,
+      "metalness": 0,
+      "normalScale": 0.9,
+      "kb": {
+        "albedo": 89,
+        "normal": 183
+      },
+      "webpQuality": 92,
+      "source": {
+        "raw": "art/pipeline/materials/variants.mjs",
+        "tile": [
+          512,
+          512
+        ]
+      }
+    },
+    {
+      "id": "linen_fine",
+      "name": "Лён тонкого плетения",
+      "group": "cloth",
+      "albedo": "linen_fine.webp",
+      "normal": "linen_fine_n.png",
+      "emissive": null,
+      "size": 512,
+      "use": "Рубахи, туники, рясы и штаны, где нужна ровная ткань без крупной плетёнки: полотняное плетение мелкой нитью.",
+      "shapes": [
+        "shirt",
+        "tunic",
+        "trousers",
+        "robe",
+        "cloth_cuffs",
+        "cloth_boots",
+        "sash",
+        "cloak_short",
+        "mantle",
+        "hat_pointed"
+      ],
+      "baseColor": "#cab080",
+      "baseLuma": 0.452,
+      "tint": {
+        "mode": "ratio",
+        "strength": 1,
+        "note": "material.color = linear(look.color) / linear(baseColor) по каналам (зажим до 1,6), map = albedo: простейший путь без шейдера; лучше всего для целевых цветов темнее baseColor или близких по яркости"
+      },
+      "tileMeters": 0.3,
+      "roughness": 0.95,
+      "metalness": 0,
+      "normalScale": 0.8,
+      "kb": {
+        "albedo": 99,
+        "normal": 181
+      },
+      "webpQuality": 92,
+      "source": {
+        "raw": "art/pipeline/materials/variants.mjs",
+        "tile": [
+          512,
+          512
+        ]
+      }
+    }
+  ]
+}

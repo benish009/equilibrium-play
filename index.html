@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- viewport-fit=cover: игра занимает весь экран телефона, отступы от выреза и полосы жестов берутся из env(safe-area-inset-*). Масштаб страницы закреплён: щипок на поле масштабирует камеру, а не страницу. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#0b0705" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <title>Эквилибриум</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet" />
+    <!-- Экран загрузки живёт прямо в разметке: он виден уже во время скачивания скриптов. Пути относительные, чтобы работало и в подпапке GitHub Pages. -->
+    <style>
+      html, body { margin: 0; height: 100%; background: #0b0705; }
+      #loading { position: fixed; inset: 0; z-index: 100; background: #0b0705; overflow: hidden; font-family: Georgia, 'Times New Roman', serif; color: #efe3c6; transition: opacity .7s ease; user-select: none; }
+      #loading.ld-fast { transition-duration: .25s; }
+      #loading.ld-hide { opacity: 0; pointer-events: none; }
+      .ld-art { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 22% bottom; filter: saturate(1.06) contrast(1.04); }
+      .ld-shade { position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 42%, rgba(0,0,0,0) 52%, rgba(10,5,2,.6) 100%); }
+      .ld-shade2 { position: absolute; left: 17%; right: 6%; bottom: 0; height: 52%; background: radial-gradient(ellipse at 50% 100%, rgba(12,6,2,.92) 0%, rgba(12,6,2,.7) 38%, rgba(12,6,2,0) 72%); }
+      /* Ширина ровно две трети экрана; чуть сдвинута вправо, чтобы не закрывать логотип в левом нижнем углу картинки. */
+      .ld-panel { position: absolute; left: calc(50% + 2.4vw); bottom: clamp(16px, 4.5vh, 52px); transform: translateX(-50%); width: 66.667vw; display: flex; flex-direction: column; gap: clamp(6px, 1.1vh, 12px); }
+      @media (max-width: 900px) { .ld-panel { left: 50%; } }
+      @media (max-aspect-ratio: 1/1) { .ld-art { object-position: 47% bottom; } }
+      @media (max-width: 640px) { .ld-panel { width: 92vw; } }
+      /* Телефон: панель загрузки не уходит под полосу жестов и вырез; в ландшафте она ниже и компактнее, совет в одну-две строки. */
+      @supports (padding: env(safe-area-inset-bottom)) { .ld-panel { margin-bottom: env(safe-area-inset-bottom); max-width: calc(100vw - env(safe-area-inset-left) - env(safe-area-inset-right) - 16px); } }
+      @media (max-height: 520px) { .ld-panel { width: min(92vw, 720px); left: 50%; bottom: 8px; gap: 4px; } .ld-flask { --h: 40px; } .ld-tip { min-height: 0; padding: 5px 12px; } .ld-shade2 { left: 0; right: 0; height: 70%; } }
+
+      .ld-stage { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; font: 400 clamp(14px, 1.55vw, 22px)/1.2 'Russo One', 'Arial Black', sans-serif; letter-spacing: .5px; color: #f1c75c; text-shadow: 0 2px 0 #2a1608, 0 0 10px rgba(0,0,0,.85); }
+      .ld-loc { font: italic 400 clamp(12px, 1.2vw, 17px)/1.2 Georgia, serif; color: #d8c79c; letter-spacing: 0; white-space: nowrap; }
+
+      /* Колба: дубовые торцы, железные кольца и скобы, потёртое стекло с янтарной жидкостью. */
+      .ld-flask { --h: clamp(46px, 6.4vw, 78px); position: relative; height: var(--h); display: flex; align-items: center; filter: drop-shadow(0 10px 9px rgba(0,0,0,.7)); }
+      .ld-cap { position: relative; z-index: 3; flex: none; width: calc(var(--h) * 1.2); height: 100%; display: flex; align-items: center; justify-content: center; border: 3px solid #1f1108;
+        background: linear-gradient(90deg, rgba(0,0,0,.55), rgba(0,0,0,0) 26%, rgba(0,0,0,0) 62%, rgba(0,0,0,.55)), linear-gradient(180deg, rgba(255,222,165,.2), rgba(0,0,0,0) 22%, rgba(0,0,0,.42)), url(assets/ui/tex/wood.jpg) center / 190px, #6e4420;
+        box-shadow: inset 0 0 0 2px #8a5a2b, inset 0 0 16px rgba(0,0,0,.65); }
+      .ld-cap-l { border-radius: calc(var(--h) * .42) 6px 6px calc(var(--h) * .42); }
+      .ld-cap-r { border-radius: 6px calc(var(--h) * .42) calc(var(--h) * .42) 6px; }
+      .ld-burn { font: 400 calc(var(--h) * .36)/1 'Russo One', 'Arial Black', sans-serif; color: rgba(28,11,3,.9); text-shadow: 0 1px 0 rgba(255,208,150,.32), 0 0 5px rgba(0,0,0,.35); letter-spacing: 0; }
+      .ld-cap-r .ld-burn { font-size: calc(var(--h) * .3); }
+      .ld-scales { width: calc(var(--h) * .52); height: calc(var(--h) * .52); color: rgba(28,11,3,.9); filter: drop-shadow(0 1px 0 rgba(255,208,150,.32)); }
+      .ld-rivet { position: absolute; width: calc(var(--h) * .1); height: calc(var(--h) * .1); border-radius: 50%; background: radial-gradient(circle at 35% 30%, #e6e2d8, #6f6c66 55%, #1d1c1a); box-shadow: 0 1px 1px rgba(0,0,0,.7); }
+      .ld-rivet.a { left: 12%; top: 12%; } .ld-rivet.b { left: 12%; bottom: 12%; }
+      .ld-cap-r .ld-rivet.a, .ld-cap-r .ld-rivet.b { left: auto; right: 12%; }
+
+      .ld-ring { position: relative; z-index: 2; flex: none; width: calc(var(--h) * .24); height: 90%; border: 2px solid #121110; border-radius: 3px;
+        background: linear-gradient(90deg, #1b1a18, #8c8984 24%, #4d4b47 58%, #1f1e1c); box-shadow: 0 2px 4px rgba(0,0,0,.6), inset 0 0 0 1px rgba(255,255,255,.14); }
+      .ld-tube { position: relative; flex: 1; height: 74%; }
+      .ld-glass { position: absolute; inset: 0; border-radius: 9px; overflow: hidden; background: linear-gradient(180deg, #1d1510, #0b0705 58%, #170f0a);
+        box-shadow: inset 0 4px 9px rgba(0,0,0,.92), inset 0 -2px 6px rgba(255,255,255,.07), 0 0 0 2px rgba(178,205,196,.26); }
+      .ld-liquid { position: absolute; left: 0; top: 0; bottom: 0; width: 0; background: linear-gradient(180deg, #fff1b4 0%, #ffcc4a 13%, #f29b1d 48%, #b8590b 86%, #7b3504 100%);
+        box-shadow: 0 0 22px rgba(255,172,52,.65), inset 0 2px 2px rgba(255,255,255,.55), inset 0 -9px 10px rgba(90,30,0,.5); }
+      .ld-liquid::before { content: ""; position: absolute; inset: 0; background: linear-gradient(100deg, transparent 32%, rgba(255,255,255,.4) 50%, transparent 68%); background-size: 240% 100%; animation: ld-sheen 2.8s linear infinite; }
+      .ld-liquid::after { content: ""; position: absolute; right: 0; top: 0; bottom: 0; width: calc(var(--h) * .2); background: linear-gradient(90deg, rgba(255,214,120,0), rgba(255,246,196,.85)); border-radius: 0 60% 60% 0 / 0 50% 50% 0; }
+      .ld-bub { position: absolute; bottom: -10%; border-radius: 50%; background: radial-gradient(circle at 35% 30%, rgba(255,255,255,.95), rgba(255,255,255,.25) 55%, rgba(255,255,255,0) 72%); animation: ld-bub 3.4s ease-in infinite; opacity: 0; }
+      .ld-glass::before { content: ""; position: absolute; inset: 0; z-index: 3; pointer-events: none; background: linear-gradient(180deg, rgba(255,255,255,.36) 0, rgba(255,255,255,.1) 17%, rgba(255,255,255,0) 38%, rgba(255,255,255,0) 72%, rgba(255,255,255,.15) 100%), linear-gradient(90deg, rgba(150,190,172,.07), rgba(150,190,172,0) 30%); }
+      .ld-glass::after { content: ""; position: absolute; inset: 0; z-index: 4; pointer-events: none; background: url(assets/ui/glass_scuffs.svg) 0 0 / 100% 100%; mix-blend-mode: screen; opacity: .95; }
+      .ld-streak { position: absolute; z-index: 4; top: 6%; bottom: 6%; left: 5%; width: 2.2%; transform: skewX(-18deg); background: linear-gradient(180deg, rgba(255,255,255,0), rgba(255,255,255,.34), rgba(255,255,255,0)); pointer-events: none; }
+      .ld-band { position: absolute; z-index: 5; top: -10%; bottom: -10%; width: calc(var(--h) * .2); border: 2px solid #121110; border-radius: 3px;
+        background: linear-gradient(90deg, #1b1a18, #8c8984 22%, #4d4b47 56%, #1f1e1c); box-shadow: 0 2px 5px rgba(0,0,0,.65), inset 0 0 0 1px rgba(255,255,255,.14); }
+      .ld-band::before, .ld-band::after { content: ""; position: absolute; left: 50%; width: 6px; height: 6px; margin-left: -3px; border-radius: 50%; background: radial-gradient(circle at 35% 30%, #e6e2d8, #6f6c66 55%, #1d1c1a); }
+      .ld-band::before { top: 8%; } .ld-band::after { bottom: 8%; }
+      .ld-band.b1 { left: 33.3%; } .ld-band.b2 { left: 66.6%; }
+
+      .ld-meta { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; font: 400 clamp(11px, 1.05vw, 14px)/1.3 Georgia, serif; color: #d8c79c; text-shadow: 0 1px 2px #000; }
+      .ld-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+      .ld-chip { padding: 2px 9px; border: 1px solid rgba(241,199,92,.38); border-radius: 10px; background: rgba(20,10,4,.6); white-space: nowrap; }
+      .ld-chip b { font-weight: 400; color: #f1c75c; }
+      .ld-eta { white-space: nowrap; padding-top: 2px; }
+      .ld-tip { display: flex; gap: 8px; align-items: baseline; min-height: 3.6em; padding: 9px 16px; border: 2px solid #1f1108; border-radius: 6px;
+        background: linear-gradient(180deg, rgba(44,26,11,.8), rgba(18,10,4,.86)), url(assets/ui/tex/wood.jpg) center / 220px, #2a1a0a;
+        box-shadow: inset 0 0 0 1px rgba(168,119,63,.55), 0 4px 10px rgba(0,0,0,.55); font: italic clamp(12px, 1.25vw, 17px)/1.4 Georgia, serif; color: #efe3c6; }
+      .ld-tip b { font-style: normal; font-weight: 700; color: #f1c75c; white-space: nowrap; }
+      .ld-tip span { transition: opacity .4s ease; }
+      .ld-tip.ld-swap span { opacity: 0; }
+
+      @keyframes ld-sheen { from { background-position: 140% 0; } to { background-position: -100% 0; } }
+      @keyframes ld-bub { 0% { transform: translate(0, 0) scale(.6); opacity: 0; } 12% { opacity: .85; } 100% { transform: translate(var(--dx, 14px), -300%) scale(1); opacity: 0; } }
+      @media (prefers-reduced-motion: reduce) { .ld-liquid::before, .ld-bub { animation: none; } }
+    </style>
+    <script type="module" crossorigin src="./assets/index-BVDhHr9I.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-svaeYnxR.css">
+  </head>
+  <body>
+    <div id="game"></div>
+    <div id="ui"></div>
+    <div id="loading" role="status" aria-live="polite">
+      <img class="ld-art" id="ld-art" alt="" draggable="false" />
+      <script>
+        // Картинка на экране загрузки: чаще та, что подходит месту, куда идёт герой, иначе любая из четырёх, но не та же, что в прошлый раз.
+        (function () {
+          var arts = { battle: 'assets/ui/loading_art.jpg', village: 'assets/ui/loading_village.jpg', swamp: 'assets/ui/loading_swamp.jpg', crypt: 'assets/ui/loading_crypt.jpg' };
+          var keys = ['battle', 'village', 'swamp', 'crypt'];
+          var loc = '';
+          var last = '';
+          var forced = (location.search.match(/[?&]art=(\w+)/) || [])[1];
+          try { var save = JSON.parse(localStorage.getItem('equilibrium.save.v1') || 'null'); loc = (save && save.location) || ''; } catch (e) {}
+          try { last = sessionStorage.getItem('eq_ld_art') || ''; } catch (e) {}
+          var key = arts[loc] && Math.random() < 0.6 ? loc : keys[Math.floor(Math.random() * keys.length)];
+          if (key === last) key = keys[(keys.indexOf(key) + 1 + Math.floor(Math.random() * 3)) % keys.length];
+          try { sessionStorage.setItem('eq_ld_art', key); } catch (e) {}
+          if (forced && arts[forced]) key = forced;
+          document.getElementById('ld-art').src = arts[key];
+        })();
+      </script>
+      <div class="ld-shade"></div>
+      <div class="ld-shade2"></div>
+      <div class="ld-panel">
+        <div class="ld-stage"><span id="ld-stage">Загрузка…</span><span class="ld-loc" id="ld-loc"></span></div>
+        <div class="ld-flask">
+          <div class="ld-cap ld-cap-l"><i class="ld-rivet a"></i><i class="ld-rivet b"></i><svg class="ld-scales" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="20" cy="5.5" r="1.7"/><path d="M20 7.5v25M13 35h14M6 11.5h28M6 11.5 2.5 22.5M6 11.5 9.5 22.5M34 11.5l-3.5 11M34 11.5l3.5 11M1.5 22.5h10c-.6 4.4-2.4 6.2-5 6.2s-4.4-1.8-5-6.2zM28.5 22.5h10c-.6 4.4-2.4 6.2-5 6.2s-4.4-1.8-5-6.2z"/></svg></div>
+          <div class="ld-ring"></div>
+          <div class="ld-tube">
+            <div class="ld-glass">
+              <div class="ld-liquid" id="ld-liquid">
+                <i class="ld-bub" style="left:12%;width:5px;height:5px;animation-delay:.2s;--dx:10px"></i>
+                <i class="ld-bub" style="left:28%;width:7px;height:7px;animation-delay:1.3s;animation-duration:4s;--dx:-8px"></i>
+                <i class="ld-bub" style="left:46%;width:4px;height:4px;animation-delay:.7s;animation-duration:2.9s;--dx:12px"></i>
+                <i class="ld-bub" style="left:61%;width:6px;height:6px;animation-delay:2.1s;--dx:-12px"></i>
+                <i class="ld-bub" style="left:77%;width:5px;height:5px;animation-delay:1s;animation-duration:3.7s;--dx:9px"></i>
+                <i class="ld-bub" style="left:90%;width:4px;height:4px;animation-delay:2.6s;animation-duration:3.1s;--dx:-6px"></i>
+              </div>
+              <div class="ld-streak"></div>
+            </div>
+            <div class="ld-band b1"></div>
+            <div class="ld-band b2"></div>
+          </div>
+          <div class="ld-ring"></div>
+          <div class="ld-cap ld-cap-r"><i class="ld-rivet a"></i><i class="ld-rivet b"></i><span class="ld-burn" id="ld-pct">0%</span></div>
+        </div>
+        <div class="ld-meta"><div class="ld-chips" id="ld-chips"></div><div class="ld-eta" id="ld-eta">прикидываем время…</div></div>
+        <div class="ld-tip" id="ld-tipbox"><b>Совет.</b><span id="ld-tip">Старые сказки не умирают: они просто ждут, когда их прочтут вслух.</span></div>
+      </div>
+    </div>
+  </body>
+</html>
